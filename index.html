@@ -21,6 +21,10 @@ var TableBackgroundMouseoverColor = "#A9A9F5";
 // These two functions need no customization.
 function ChangeBackgroundColor(row) { row.style.backgroundColor = TableBackgroundMouseoverColor; }
 function RestoreBackgroundColor(row) { row.style.backgroundColor = TableBackgroundNormalColor; }
+if (window.history.replaceState) {
+   //prevents browser from storing history with each change:
+   window.history.replaceState(statedata, title, '');
+}
 </script>
 
 
