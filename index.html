@@ -8,7 +8,18 @@
 <title>New Tab</title>
 
 
+<style>
+.zoom {    
+    transition: transform .2s; /* Animation */
+    width: 116px;
+    height: 116px;
+    margin: 0 auto;
+}
 
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
 
 <script type="text/javascript">
 // Specify the normal table row background color
@@ -21,8 +32,8 @@ var TableBackgroundMouseoverColor = "#FFFFFF";
 // These two functions need no customization.
 //function ChangeBackgroundColor(row) { row.style.backgroundColor = TableBackgroundMouseoverColor; }
 //function RestoreBackgroundColor(row) { row.style.backgroundColor = TableBackgroundNormalColor; }
-function ChangeBackgroundColor(id) { document.getElementById(id).style.width = 120px;document.getElementById(id).style.height = 120px; }
-function RestoreBackgroundColor(id) { document.getElementById(id).style.width = 116px;document.getElementById(id).style.height = 116px; }
+//function ChangeBackgroundColor(id) { document.getElementById(id).classList.add("mystyle");;document.getElementById(id).style.transform: scale(1.5); }
+//function RestoreBackgroundColor(id) { document.getElementById(id).style.width = "116px";document.getElementById(id).style.height = "116px"; }
 </script>
 
 
@@ -38,101 +49,101 @@ function RestoreBackgroundColor(id) { document.getElementById(id).style.width = 
 <table cellspacing=20 align="center">
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(img1)" onmouseout="RestoreBackgroundColor(img1)" onClick="window.open('http://www.casadellibro.com','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img1')" onmouseout="RestoreBackgroundColor('img1')" onClick="window.open('http://www.casadellibro.com','_self');">
 			<td align="center">
-				<img src="casadellibro_peq.png" /*width="207"*/ width="116" height="116" id="img1">
+				<img class="zoom" src="casadellibro_peq.png" /*width="207"*/ width="116" height="116" id="img1">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://pre-es.casadellibro.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img2')" onmouseout="RestoreBackgroundColor('img2')" onClick="window.open('http://pre-es.casadellibro.com/','_self');">
 			<td align="center">
-				<img src="casadellibropre_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="casadellibropre_peq.png" /*width="207"*/ width="116" height="116" id="img2">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://localhost:93','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img3')" onmouseout="RestoreBackgroundColor('img3')" onClick="window.open('https://localhost:93','_self');">
 			<td align="center">
-				<img src="casadellibrolocal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="casadellibrolocal_peq.png" /*width="207"*/ width="116" height="116" id="img3">
 			</td>	
 		</table>
 	</td>
 
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://m.casadellibro.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img4')" onmouseout="RestoreBackgroundColor('img4')" onClick="window.open('https://m.casadellibro.com/','_self');">
 			<td align="center">
-				<img src="casadellibromovil_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="casadellibromovil_peq.png" /*width="207"*/ width="116" height="116" id="img4">
 			</td>	
 		</table>
 	</td>
 
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://pre-m-es.casadellibro.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img5')" onmouseout="RestoreBackgroundColor('img5')" onClick="window.open('https://pre-m-es.casadellibro.com/','_self');">
 			<td align="center">
-				<img src="casadellibromovilpre_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="casadellibromovilpre_peq.png" /*width="207"*/ width="116" height="116" id="img5">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://localhost:97/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img6')" onmouseout="RestoreBackgroundColor('img6')" onClick="window.open('https://localhost:97/','_self');">
 			<td align="center">
-				<img src="casadellibromovillocal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="casadellibromovillocal_peq.png" /*width="207"*/ width="116" height="116" id="img6">
 			</td>	
 		</table>
 	</td>
 
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://cma.casadellibro.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img7')" onmouseout="RestoreBackgroundColor('img7')" onClick="window.open('http://cma.casadellibro.com/','_self');">
 			<td align="center">
-				<img src="cmanuevo_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="cmanuevo_peq.png" /*width="207"*/ width="116" height="116" id="img7">
 			</td>	
 		</table>
 	</td>
 
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://pre.cma.casadellibro.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img8')" onmouseout="RestoreBackgroundColor('img8')" onClick="window.open('http://pre.cma.casadellibro.com/','_self');">
 			<td align="center">
-				<img src="cmapre_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="cmapre_peq.png" /*width="207"*/ width="116" height="116" id="img8">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://localhost:91/cma/ecommerce/usuarios/login','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img9')" onmouseout="RestoreBackgroundColor('img9')" onClick="window.open('http://localhost:91/cma/ecommerce/usuarios/login','_self');">
 			<td align="center">
-				<img src="cmalocal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="cmalocal_peq.png" /*width="207"*/ width="116" height="116"id="img9">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://gestor.casadellibro.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img10')" onmouseout="RestoreBackgroundColor('img10')" onClick="window.open('http://gestor.casadellibro.com/','_self');">
 			<td align="center">
-				<img src="cmaantiguo_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="cmaantiguo_peq.png" /*width="207"*/ width="116" height="116" id="img10">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://tiendas.casadellibro.com/cmatienda/usuarios/login','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img11')" onmouseout="RestoreBackgroundColor('img11')" onClick="window.open('https://tiendas.casadellibro.com/cmatienda/usuarios/login','_self');">
 			<td align="center">
-				<img src="tiendas_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="tiendas_peq.png" /*width="207"*/ width="116" height="116" id="img11">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://localhost:100/cmatienda/usuarios/login','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img12')" onmouseout="RestoreBackgroundColor('img12')" onClick="window.open('http://localhost:100/cmatienda/usuarios/login','_self');">
 			<td align="center">
-				<img src="tiendaslocal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="tiendaslocal_peq.png" /*width="207"*/ width="116" height="116" id="img12">
 			</td>	
 		</table>
 	</td>	
@@ -142,99 +153,99 @@ function RestoreBackgroundColor(id) { document.getElementById(id).style.width = 
 <table cellspacing=20 align="center" style="margin-top:-25px;">	
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.planetadeagostini.es/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img13')" onmouseout="RestoreBackgroundColor('img13')" onClick="window.open('https://www.planetadeagostini.es/','_self');">
 			<td align="center">
-				<img src="pasa_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="pasa_peq.png" /*width="207"*/ width="116" height="116" id="img13">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.tagusbooks.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img14')" onmouseout="RestoreBackgroundColor('img14')" onClick="window.open('https://www.tagusbooks.com/','_self');">
 			<td align="center">
-				<img src="tagus_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="tagus_peq.png" /*width="207"*/ width="116" height="116" id="img14">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://pre.tagusbooks.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img15')" onmouseout="RestoreBackgroundColor('img15')" onClick="window.open('http://pre.tagusbooks.com/','_self');">
 			<td align="center">
-				<img src="taguspre_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="taguspre_peq.png" /*width="207"*/ width="116" height="116" id="img15">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://localhost:92/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img16')" onmouseout="RestoreBackgroundColor('img16')" onClick="window.open('http://localhost:92/','_self');">
 			<td align="center">
-				<img src="taguslocal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="taguslocal_peq.png" /*width="207"*/ width="116" height="116" id="img16">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.dvdgo.com','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img17')" onmouseout="RestoreBackgroundColor('img17')" onClick="window.open('https://www.dvdgo.com','_self');">
 			<td align="center">
-				<img src="dvdgo_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="dvdgo_peq.png" /*width="207"*/ width="116" height="116" id="img17">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://pre.dvdgo.com','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img18')" onmouseout="RestoreBackgroundColor('img18')" onClick="window.open('https://pre.dvdgo.com','_self');">
 			<td align="center">
-				<img src="dvdgopre_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="dvdgopre_peq.png" /*width="207"*/ width="116" height="116" id="img18">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://localhost:938/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img19')" onmouseout="RestoreBackgroundColor('img19')" onClick="window.open('http://localhost:938/','_self');">
 			<td align="center">
-				<img src="dvdgolocal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="dvdgolocal_peq.png" /*width="207"*/ width="116" height="116" id="img19">
 			</td>	
 		</table>
 	</td>	
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://marketplace.casadellibro.com/login','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img20')" onmouseout="RestoreBackgroundColor('img20')" onClick="window.open('https://marketplace.casadellibro.com/login','_self');">
 			<td align="center">
-				<img src="mirakl_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="mirakl_peq.png" /*width="207"*/ width="116" height="116" id="img20">
 			</td>	
 		</table>
 	</td>
 
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://mediaportal.level3.com/ui/login','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img21')" onmouseout="RestoreBackgroundColor('img21')" onClick="window.open('https://mediaportal.level3.com/ui/login','_self');">
 			<td align="center">
-				<img src="level3_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="level3_peq.png" /*width="207"*/ width="116" height="116" id="img21">
 			</td>	
 		</table>
 	</td>
 
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://evernote.com/intl/es/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img22')" onmouseout="RestoreBackgroundColor('img22')" onClick="window.open('https://evernote.com/intl/es/','_self');">
 			<td align="center">
-				<img src="evernote_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="evernote_peq.png" /*width="207"*/ width="116" height="116" id="img22">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://servicedesk.psoplaneta.com/secure/MyJiraHome.jspa','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img23')" onmouseout="RestoreBackgroundColor('img23')" onClick="window.open('https://servicedesk.psoplaneta.com/secure/MyJiraHome.jspa','_self');">
 			<td align="center">
-				<img src="jira_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="jira_peq.png" /*width="207"*/ width="116" height="116" id="img23">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://gestor.casadellibro.com/planificador/admin/consultaItems','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img24')" onmouseout="RestoreBackgroundColor('img24')" onClick="window.open('http://gestor.casadellibro.com/planificador/admin/consultaItems','_self');">
 			<td align="center">
-				<img src="planificador_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="planificador_peq.png" /*width="207"*/ width="116" height="116" id="img24">
 			</td>	
 		</table>
 	</td>		
@@ -244,201 +255,98 @@ function RestoreBackgroundColor(id) { document.getElementById(id).style.width = 
 <table cellspacing=20 align="center" style="margin-top:-25px;">	
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.notion.so/torri22/a8d0ce6477e948da8921d0ae84e7a453?v=f45e80f713e04a19b543f2bae2172b9b','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img25')" onmouseout="RestoreBackgroundColor('img25')" onClick="window.open('https://www.notion.so/torri22/a8d0ce6477e948da8921d0ae84e7a453?v=f45e80f713e04a19b543f2bae2172b9b','_self');">
 			<td align="center">
-				<img src="notion_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="notion_peq.png" /*width="207"*/ width="116" height="116" id="img25">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.workflowy.com','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img26')" onmouseout="RestoreBackgroundColor('img26')" onClick="window.open('https://www.workflowy.com','_self');">
 			<td align="center">
-				<img src="workflowy_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="workflowy_peq.png" /*width="207"*/ width="116" height="116" id="img26">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.dropbox.com/paper?no_redirect=1','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img27')" onmouseout="RestoreBackgroundColor('img27')" onClick="window.open('https://www.dropbox.com/paper?no_redirect=1','_self');">
 			<td align="center">
-				<img src="papers_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="papers_peq.png" /*width="207"*/ width="116" height="116" id="img27">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://regex101.com/r/yN4tJ6/1','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img28')" onmouseout="RestoreBackgroundColor('img28')" onClick="window.open('https://regex101.com/r/yN4tJ6/1','_self');">
 			<td align="center">
-				<img src="regex_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="regex_peq.png" /*width="207"*/ width="116" height="116" id="img28">
 			</td>	
 		</table>
 	</td>	
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://es.stackoverflow.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img29')" onmouseout="RestoreBackgroundColor('img29')" onClick="window.open('https://es.stackoverflow.com/','_self');">
 			<td align="center">
-				<img src="stackoverflow_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="stackoverflow_peq.png" /*width="207"*/ width="116" height="116" id="img29">
 			</td>	
 		</table>
 	</td>	
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://mail.google.com/mail/u/0/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img30')" onmouseout="RestoreBackgroundColor('img30')" onClick="window.open('https://mail.google.com/mail/u/0/','_self');">
 			<td align="center">
-				<img src="gmail_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="gmail_peq.png" /*width="207"*/ width="116" height="116" id="img30">
 			</td>	
 		</table>
 	</td>
 
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://calendar.google.com/calendar/render?pli=1#main_7','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img31')" onmouseout="RestoreBackgroundColor('img31')" onClick="window.open('https://calendar.google.com/calendar/render?pli=1#main_7','_self');">
 			<td align="center">
-				<img src="calendar_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="calendar_peq.png" /*width="207"*/ width="116" height="116" id="img31">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://docs.google.com/spreadsheets/d/1v1hx4mMC6lUwwnnxA9P_oAQTHovn4uVBu08KJnWz-k0/edit#gid=1863924209','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img32')" onmouseout="RestoreBackgroundColor('img32')" onClick="window.open('https://docs.google.com/spreadsheets/d/1v1hx4mMC6lUwwnnxA9P_oAQTHovn4uVBu08KJnWz-k0/edit#gid=1863924209','_self');">
 			<td align="center">
-				<img src="google docs_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="google docs_peq.png" /*width="207"*/ width="116" height="116" id="img32">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://play.google.com/music/listen','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img33')" onmouseout="RestoreBackgroundColor('img33')" onClick="window.open('https://play.google.com/music/listen','_self');">
 			<td align="center">
-				<img src="google music_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="google music_peq.png" /*width="207"*/ width="116" height="116" id="img33">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://keep.google.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img34')" onmouseout="RestoreBackgroundColor('img34')" onClick="window.open('https://keep.google.com/','_self');">
 			<td align="center">
-				<img src="keep_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="keep_peq.png" /*width="207"*/ width="116" height="116" id="img34">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://instagram.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img35')" onmouseout="RestoreBackgroundColor('img35')" onClick="window.open('https://instagram.com/','_self');">
 			<td align="center">
-				<img src="instagram_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="instagram_peq.png" /*width="207"*/ width="116" height="116" id="img35">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.bankia.es/es/particulares','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img36')" onmouseout="RestoreBackgroundColor('img36')" onClick="window.open('https://www.bankia.es/es/particulares','_self');">
 			<td align="center">
-				<img src="bankia_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>	
-	
-</table>
-
-<table cellspacing=20 align="center" style="margin-top:-25px;">
-
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.dropbox.com/paper?no_redirect=1','_self');">
-			<td align="center">
-				<img src="dropbox_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>	
-	
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://lastpass.com/?&ac=1&lpnorefresh=1&lang=es&fromwebsite=1&newvault=1&nk=1','_self');">
-			<td align="center">
-				<img src="lastpass_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-	
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://web.whatsapp.com/','_self');">
-			<td align="center">
-				<img src="whatsapp_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.youtube.com/','_self');">
-			<td align="center">
-				<img src="youtubel_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://ver.movistarplus.es/','_self');">
-			<td align="center">
-				<img src="movistar_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>	
-	
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.netflix.com/es/','_self');">
-			<td align="center">
-				<img src="netflix_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-	
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://feedly.com/','_self');">
-			<td align="center">
-				<img src="feedly_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>	
-	
-	
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.reddit.com/','_self');">
-			<td align="center">
-				<img src="reddit_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://www.elmundo.es/','_self');">
-			<td align="center">
-				<img src="elmundo_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-
-
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://elpais.com/','_self');">
-			<td align="center">
-				<img src="elpais_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://as.com/','_self');">
-			<td align="center">
-				<img src="as_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-
-
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://www.marca.com/','_self');">
-			<td align="center">
-				<img src="marca_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="bankia_peq.png" /*width="207"*/ width="116" height="116" id="img36">
 			</td>	
 		</table>
 	</td>	
@@ -448,97 +356,200 @@ function RestoreBackgroundColor(id) { document.getElementById(id).style.width = 
 <table cellspacing=20 align="center" style="margin-top:-25px;">
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://goltelevision.com/elgolazodegol/videos','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img37')" onmouseout="RestoreBackgroundColor('img37')" onClick="window.open('https://www.dropbox.com/paper?no_redirect=1','_self');">
 			<td align="center">
-				<img src="gol_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-	
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.forocoches.com/foro/subscription.php?do=viewsubscription','_self');">
-			<td align="center">
-				<img src="forocoches_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="dropbox_peq.png" /*width="207"*/ width="116" height="116" id="img37">
 			</td>	
 		</table>
 	</td>	
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.deviantart.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img38')" onmouseout="RestoreBackgroundColor('img38')" onClick="window.open('https://lastpass.com/?&ac=1&lpnorefresh=1&lang=es&fromwebsite=1&newvault=1&nk=1','_self');">
 			<td align="center">
-				<img src="deviantart_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="lastpass_peq.png" /*width="207"*/ width="116" height="116" id="img38">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://digitalvanity.me/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img39')" onmouseout="RestoreBackgroundColor('img39')" onClick="window.open('https://web.whatsapp.com/','_self');">
 			<td align="center">
-				<img src="digitalvanity_peq.png" /*width="207"*/ width="116" height="116">
-			</td>	
-		</table>
-	</td>
-	
-	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://isthereanydeal.com/','_self');">
-			<td align="center">
-				<img src="isthereanydeal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="whatsapp_peq.png" /*width="207"*/ width="116" height="116" id="img39">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://www.winscreen.ru/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img40')" onmouseout="RestoreBackgroundColor('img40')" onClick="window.open('https://www.youtube.com/','_self');">
 			<td align="center">
-				<img src="winscreen_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="youtubel_peq.png" /*width="207"*/ width="116" height="116" id="img40">
+			</td>	
+		</table>
+	</td>
+
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img41')" onmouseout="RestoreBackgroundColor('img41')" onClick="window.open('http://ver.movistarplus.es/','_self');">
+			<td align="center">
+				<img class="zoom" src="movistar_peq.png" /*width="207"*/ width="116" height="116" id="img41">
+			</td>	
+		</table>
+	</td>	
+	
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img42')" onmouseout="RestoreBackgroundColor('img42')" onClick="window.open('https://www.netflix.com/es/','_self');">
+			<td align="center">
+				<img class="zoom" src="netflix_peq.png" /*width="207"*/ width="116" height="116" id="img42">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://store.steampowered.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img43')" onmouseout="RestoreBackgroundColor('img43')" onClick="window.open('https://feedly.com/','_self');">
 			<td align="center">
-				<img src="steam_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="feedly_peq.png" /*width="207"*/ width="116" height="116" id="img43">
+			</td>	
+		</table>
+	</td>	
+	
+	
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img44')" onmouseout="RestoreBackgroundColor('img44')" onClick="window.open('https://www.reddit.com/','_self');">
+			<td align="center">
+				<img class="zoom" src="reddit_peq.png" /*width="207"*/ width="116" height="116" id="img44">
+			</td>	
+		</table>
+	</td>
+
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img45')" onmouseout="RestoreBackgroundColor('img45')" onClick="window.open('http://www.elmundo.es/','_self');">
+			<td align="center">
+				<img class="zoom" src="elmundo_peq.png" /*width="207"*/ width="116" height="116" id="img45">
+			</td>	
+		</table>
+	</td>
+
+
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img46')" onmouseout="RestoreBackgroundColor('img46')" onClick="window.open('https://elpais.com/','_self');">
+			<td align="center">
+				<img class="zoom" src="elpais_peq.png" /*width="207"*/ width="116" height="116" id="img46">
+			</td>	
+		</table>
+	</td>
+
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img47')" onmouseout="RestoreBackgroundColor('img47')" onClick="window.open('https://as.com/','_self');">
+			<td align="center">
+				<img class="zoom" src="as_peq.png" /*width="207"*/ width="116" height="116" id="img47">
+			</td>	
+		</table>
+	</td>
+
+
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img48')" onmouseout="RestoreBackgroundColor('img48')" onClick="window.open('http://www.marca.com/','_self');">
+			<td align="center">
+				<img class="zoom" src="marca_peq.png" /*width="207"*/ width="116" height="116" id="img48">
+			</td>	
+		</table>
+	</td>	
+	
+</table>
+
+<table cellspacing=20 align="center" style="margin-top:-25px;">
+
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img49')" onmouseout="RestoreBackgroundColor('img49')" onClick="window.open('http://goltelevision.com/elgolazodegol/videos','_self');">
+			<td align="center">
+				<img class="zoom" src="gol_peq.png" /*width="207"*/ width="116" height="116" id="img49">
+			</td>	
+		</table>
+	</td>
+	
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img50')" onmouseout="RestoreBackgroundColor('img50')" onClick="window.open('https://www.forocoches.com/foro/subscription.php?do=viewsubscription','_self');">
+			<td align="center">
+				<img class="zoom" src="forocoches_peq.png" /*width="207"*/ width="116" height="116" id="img50">
+			</td>	
+		</table>
+	</td>	
+	
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img51')" onmouseout="RestoreBackgroundColor('img51')" onClick="window.open('https://www.deviantart.com/','_self');">
+			<td align="center">
+				<img class="zoom" src="deviantart_peq.png" /*width="207"*/ width="116" height="116" id="img51">
+			</td>	
+		</table>
+	</td>
+	
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img52')" onmouseout="RestoreBackgroundColor('img52')" onClick="window.open('http://digitalvanity.me/','_self');">
+			<td align="center">
+				<img class="zoom" src="digitalvanity_peq.png" /*width="207"*/ width="116" height="116" id="img52">
+			</td>	
+		</table>
+	</td>
+	
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img53')" onmouseout="RestoreBackgroundColor('img53')" onClick="window.open('https://isthereanydeal.com/','_self');">
+			<td align="center">
+				<img class="zoom" src="isthereanydeal_peq.png" /*width="207"*/ width="116" height="116" id="img53">
+			</td>	
+		</table>
+	</td>
+
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img54')" onmouseout="RestoreBackgroundColor('img54')" onClick="window.open('http://www.winscreen.ru/','_self');">
+			<td align="center">
+				<img class="zoom" src="winscreen_peq.png" /*width="207"*/ width="116" height="116" id="img54">
+			</td>	
+		</table>
+	</td>
+	
+	<td onmouseover="this.style.cursor='pointer'">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img55')" onmouseout="RestoreBackgroundColor('img55')" onClick="window.open('http://store.steampowered.com/','_self');">
+			<td align="center">
+				<img class="zoom" src="steam_peq.png" /*width="207"*/ width="116" height="116" id="img55">
 			</td>	
 		</table>
 	</td>
 		
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://store.steampowered.com/account/registerkey','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img56')" onmouseout="RestoreBackgroundColor('img56')" onClick="window.open('https://store.steampowered.com/account/registerkey','_self');">
 			<td align="center">
-				<img src="redeem_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="redeem_peq.png" /*width="207"*/ width="116" height="116" id="img56">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://pcgames-download.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img57')" onmouseout="RestoreBackgroundColor('img57')" onClick="window.open('https://pcgames-download.com/','_self');">
 			<td align="center">
-				<img src="games_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="games_peq.png" /*width="207"*/ width="116" height="116" id="img57">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://twitch.tv/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img58')" onmouseout="RestoreBackgroundColor('img58')" onClick="window.open('http://twitch.tv/','_self');">
 			<td align="center">
-				<img src="twitch_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="twitch_peq.png" /*width="207"*/ width="116" height="116" id="img58">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.elotrolado.net/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img59')" onmouseout="RestoreBackgroundColor('img59')" onClick="window.open('https://www.elotrolado.net/','_self');">
 			<td align="center">
-				<img src="eol_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="eol_peq.png" /*width="207"*/ width="116" height="116" id="img59">
 			</td>	
 		</table>
 	</td>	
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://chrono.gg/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img60')" onmouseout="RestoreBackgroundColor('img60')" onClick="window.open('https://chrono.gg/','_self');">
 			<td align="center">
-				<img src="chrono-banner_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="chrono-banner_peq.png" /*width="207"*/ width="116" height="116" id="img60">
 			</td>	
 		</table>
 	</td>	
@@ -548,92 +559,92 @@ function RestoreBackgroundColor(id) { document.getElementById(id).style.width = 
 <table cellspacing=20 align="center" style="margin-top:-25px;">	
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://www.amazon.es/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img61')" onmouseout="RestoreBackgroundColor('img61')" onClick="window.open('http://www.amazon.es/','_self');">
 			<td align="center">
-				<img src="amazon_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="amazon_peq.png" /*width="207"*/ width="116" height="116" id="img61">
 			</td>	
 		</table>
 	</td>
 	
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.dhgate.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img62')" onmouseout="RestoreBackgroundColor('img62')" onClick="window.open('https://www.dhgate.com/','_self');">
 			<td align="center">
-				<img src="dhgate_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="dhgate_peq.png" /*width="207"*/ width="116" height="116" id="img62">
 			</td>	
 		</table>
 	</td>
 		
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.paypal.com/es/home','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img63')" onmouseout="RestoreBackgroundColor('img63')" onClick="window.open('https://www.paypal.com/es/home','_self');">
 			<td align="center">
-				<img src="paypal_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="paypal_peq.png" /*width="207"*/ width="116" height="116" id="img63">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.noisli.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img64')" onmouseout="RestoreBackgroundColor('img64')" onClick="window.open('https://www.noisli.com/','_self');">
 			<td align="center">
-				<img src="noisli_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="noisli_peq.png" /*width="207"*/ width="116" height="116" id="img64">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('http://www.ivoox.com','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img65')" onmouseout="RestoreBackgroundColor('img65')" onClick="window.open('http://www.ivoox.com','_self');">
 			<td align="center">
-				<img src="ivoox_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="ivoox_peq.png" /*width="207"*/ width="116" height="116" id="img65">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://inmanga.com','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img66')" onmouseout="RestoreBackgroundColor('img66')" onClick="window.open('https://inmanga.com','_self');">
 			<td align="center">
-				<img src="inmanga_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="inmanga_peq.png" /*width="207"*/ width="116" height="116" id="img66">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.filmaffinity.com/es/main.html','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img67')" onmouseout="RestoreBackgroundColor('img67')" onClick="window.open('https://www.filmaffinity.com/es/main.html','_self');">
 			<td align="center">
-				<img src="filmaffinity_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="filmaffinity_peq.png" /*width="207"*/ width="116" height="116" id="img67">
 			</td>	
 		</table>
 	</td>
 
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://www.onlinevideoconverter.com/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img68')" onmouseout="RestoreBackgroundColor('img68')" onClick="window.open('https://www.onlinevideoconverter.com/','_self');">
 			<td align="center">
-				<img src="ovc_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="ovc_peq.png" /*width="207"*/ width="116" height="116" id="img68">
 			</td>	
 		</table>
 	</td>
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://yts.am/','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img69')" onmouseout="RestoreBackgroundColor('img69')" onClick="window.open('https://yts.am/','_self');">
 			<td align="center">
-				<img src="yify_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="yify_peq.png" /*width="207"*/ width="116" height="116" id="img69">
 			</td>	
 		</table>
 	</td>
 
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://forum.snahp.it/index.php','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img70')" onmouseout="RestoreBackgroundColor('img70')" onClick="window.open('https://forum.snahp.it/index.php','_self');">
 			<td align="center">
-				<img src="snahp_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="snahp_peq.png" /*width="207"*/ width="116" height="116" id="img70">
 			</td>	
 		</table>
 	</td>
 	
 	
 	<td onmouseover="this.style.cursor='pointer'">
-		<table cellspacing=1 onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)" onClick="window.open('https://rarbgmirror.xyz/torrents.php','_self');">
+		<table cellspacing=1 onmouseover="ChangeBackgroundColor('img71')" onmouseout="RestoreBackgroundColor('img71')" onClick="window.open('https://rarbgmirror.xyz/torrents.php','_self');">
 			<td align="center">
-				<img src="rarbg_peq.png" /*width="207"*/ width="116" height="116">
+				<img class="zoom" src="rarbg_peq.png" /*width="207"*/ width="116" height="116" id="img71">
 			</td>	
 		</table>
 	</td>
