@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+	<script type="text/javascript" src="../js/jqmini.js"></script>
+	<script type="text/javascript" src="../js/utils/tabColor.js"></script>
+	<script type="text/javascript" src="../js/tabs.js"></script>
+</head>
+
+
+<body>
+<div id="header_panel" style="display: none;">
+	<div class="container-full">
+		<div id="categories" class="pos_bottom">
+			<span class="category_btn add_category_btn" data-toggle="modal" data-target="#add_group"><i class="fa fa-plus"></i></span>
+			<div class="categories_tabs"></div>
+		</div>
+
+		<div class="right_btn">
+			<a href="/pages/options.html" target="_blank" class="btn btn-ghost btn-opt"><i class="fa fa-cog fa-fw"></i></a>
+		</div>
+	</div>
+</div>
+
+
+<div id="tabs_page" style="display: none;">
+	<div class="container tabs-container">
+		<div id="search" class="row">
+			<div class="search_block search_block_2">
+				<form action="#" id="search_form" method="get" data-site="yandex">
+
+					<div style="position: relative;">
+						<input id="search_input" type="text" name="text" class="form-control" placeholder="">
+
+						<div class="search_sites">
+							<a id="fast_search_btn" href="#" data-toggle="dropdown"></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="https://www.google.com/search?q=" class="fast_search"><img src="/img/search-machine/google.png"> Google</a></li>
+								<li><a href="https://yandex.com/search/?text=" class="fast_search"><img src="/img/search-machine/yandex.png"> <span data-i18n="yandex"></span></a></li>
+								<li><a href="http://www.bing.com/search?q=" class="fast_search"><img src="/img/search-machine/bing.png"> Bing</a></li>
+								<li><a href="https://duckduckgo.com/?q=" class="fast_search"><img src="/img/search-machine/duckduckgo.png"> DuckDuckGo</a></li>
+								<li><a href="http://go.mail.ru/search?q=" class="fast_search"><img src="/img/search-machine/mail_ru.png"> Mail.ru</a></li>
+								<li role="presentation" class="divider"></li>
+								<li><a href="https://www.youtube.com/results?search_query=" class="fast_search"><img src="/img/search-machine/youtube.png"> YouTube</a></li>
+								<li><a href="https://ru.wikipedia.org//w/index.php?search=" class="fast_search"><img src="/img/search-machine/wikipedia.png"> Wikipedia</a></li>
+							</ul>
+						</div>
+
+					</div>
+					<ul class="ui-autocomplete">
+					</ul>
+				</form>
+			</div>
+		</div>
+
+		<div class="row tabs"></div>
+	</div>
+
+
+	<!-- <div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="#">Загрузки</a>
+					<a href="#">История</a>
+					<a href="#">Закрытые вкладки</a>
+					<a href="#">Режим инкогнито</a>
+				</div>
+				<div class="col-xs-6"></div>
+			</div>
+		</div>
+	</div> -->
+</div>
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="add_tab" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-tw"></i></button>
+				<h4 class="modal-title" id="myModalLabel" data-i18n="add_bookmark_titel"></h4>
+			</div>
+			<div class="modal-body">
+				<form action="" method="get" id="form_to_add_tab">
+					<input type="hidden" id="form_type" value="add">
+					<div class="form-group">
+						<label for="page_url" data-i18n="add_bookmark_label_1"></label>
+						<input id="page_url" type="text" class="form-control" placeholder="https://google.com/" value="">
+						<!-- <a href="#">Из открытых</a> -->
+					</div>
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="form-group">
+								<label for="title_page" data-i18n="add_bookmark_label_2"></label>
+								<input id="title_page" type="text" class="form-control" placeholder="Google">
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="group"><span data-i18n="loc_21"></span></label>
+								<select id="group" class="form-control" style="display: inline-block;"></select>
+							</div>
+						</div>
+					</div>
+
+					<input type="submit" value="save" style="display: none;" />
+				</form>
+
+				<div id="opt_tab_div" style="display: none;">
+					<hr>
+					<div class="prev_tab_window">
+						<div class="for_prev"></div>
+						<div class="for_style_btns">
+							<span data-tabstyle="minimalizm" class="btn btn-sm btn-default">1</span>
+							<span data-tabstyle="big_logo" class="btn btn-sm btn-default">2</span>
+							<span data-tabstyle="capture" class="btn btn-sm btn-default">3</span>
+						</div>
+					</div>
+
+					<div class="tab_opt tab_opt_minimalizm" style="display: none;">
+						<div style="margin-bottom: 20px;">
+							<span class="fav_btns"></span>
+							<b data-i18n="available_favicon"></b>
+						</div>
+
+
+						<div class="tab_bg">
+							<b data-i18n="bg_c_1"></b> 
+							<span class="btn btn-sm btn-default btn_tab_bg" data-bgcol="1">1</span>
+							<span class="btn btn-sm btn-default btn_tab_bg" data-bgcol="2">2</span>
+							<span class="btn btn-sm btn-default btn_tab_bg" data-bgcol="3">3</span>
+
+							<input style="width: 80px; display: inline-block;" data-target="min_bg" class="color_picker form-control input-sm" type="text" placeholder="#FFF">
+						</div>
+					</div>
+
+					<div class="tab_opt tab_opt_big_logo" style="display: none;">
+						<div>
+							<input data-target="ss_bg" style="width: 55px; font-size: 11px; padding: 0 4px; display: inline-block;" class="color_picker form-control input-sm" type="text" value="#f5f5f5"> <b data-i18n="bg_c_2"></b>
+							<input data-target="ss_text" style="width: 55px; font-size: 11px; padding: 0 4px; display: inline-block; margin-left: 25px;" class="color_picker form-control input-sm" type="text" value="#111111"> <b data-i18n="text_c"></b>
+
+							<span id="reset_opt_big_logo" class="btn btn-sm btn-danger fl_r" style="display: none;"><i class="fa fa-refresh"></i> <span data-i18n="reset_btn"></span></span>
+						</div>
+						<div class="tab_opt_load_logo" data-i18n="brag_m_2_1"></div>
+					</div>
+
+					<div class="tab_opt tab_opt_capture" style="display: none;">
+						<div style="margin-bottom: 20px;">
+							<span class="fav_btns"></span>
+							<b data-i18n="available_favicon"></b>
+						</div>
+						<div style="margin-bottom: 20px;">
+							<span class="bg_img_btns"></span>
+							<b data-i18n="suggested_background"></b>
+						</div>
+						<div class="tab_opt_load_logo" style="padding-top: 18px;" data-i18n="brag_m_2_2"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<div class="btns_add">
+					<button id="add_new_tab" type="button" class="btn btn-success" data-i18n="add_bookmark_btn_add"></button>
+					<button id="opt_tab_btn_open" type="button" class="btn btn-default fl_l" data-i18n="s_dial_sett"></button>
+					<button id="opt_tab_btn_close" type="button" class="btn btn-danger fl_l" style="display: none;" data-i18n="h_dial_sett"></button>
+				</div>
+
+				<div class="btns_edit" style="display: none;">
+					<button id="edit_tab" type="button" class="btn btn-success" data-i18n="save_set"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="custom_alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-tw"></i></button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="add_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-standart">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-tw"></i></button>
+				<h4 class="modal-title" data-i18n="loc_22"></h4>
+			</div>
+			<div class="modal-body">
+				<form action="">
+					<input type="hidden" id="group_form_type" value="add">
+					<div class="form-group">
+						<label for="group_name" data-i18n="loc_24"></label>
+						<input id="group_name" type="text" class="form-control" placeholder="Home" value="">
+					</div>
+
+					<b data-i18n="loc_25"></b>
+					<div id="group_icons"></div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button id="add_group_btn" type="button" class="btn btn-success" data-i18n="loc_26"></button>
+				<button id="save_group_btn" type="button" class="btn btn-success" style="display: none;" data-i18n="loc_27"></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="modal fade" id="help_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-standart">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-tw"></i></button>
+				<h4 class="modal-title" data-i18n="loc_29"></h4>
+			</div>
+			<div class="modal-body">
+				<div class="help_panel help_panel_1">
+					<p><b>1)</b> <span data-i18n="loc_30"></span></p>
+					<p><b>2)</b> <span data-i18n="loc_31"></span></p>
+					<p class="text-center"><img src="../img/help/help_1.png"></p>
+					<p><b>3)</b> <span data-i18n="loc_32"></span></p>
+					<p class="text-center"><img src="../img/help/help_2.png"></p>
+				</div>
+
+				<div class="help_panel help_panel_2" style="display: none;">
+					<p><b>4)</b> <span data-i18n="loc_33"></span> "<i class="fa fa-cog"></i>".</p>
+					<p><b>5)</b> <span data-i18n="loc_34"></span></p>
+					<p><b>6)</b> <span data-i18n="loc_35"></span></p>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button id="help_prev" type="button" class="btn btn-warning fl_l" style="display: none;" data-i18n="loc_36"></button>
+				<button id="help_next" type="button" class="btn btn-warning" data-i18n="loc_37"></button>
+				<button id="help_end" type="button" class="btn btn-success" style="display: none;" data-i18n="loc_38"></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<ul id="dial-context-menu" class="dropdown-menu custom-context-menu" role="menu">
+	<li><a href="#" data-action="external"><i class="fa fa-tw fa-external-link"></i> <span data-i18n="loc_39"></span></a></li>
+	<li><a href="#" data-action="secret"><i class="fa fa-tw fa-user-secret"></i> <span data-i18n="loc_40"></span></a></li>
+	<li class="divider"></li>
+	<li><a href="#" data-action="edit"><i class="fa fa-tw fa-pencil"></i> <span data-i18n="loc_41"></span></a></li>
+	<li><a href="#" data-action="remove"><i class="fa fa-trash-o fa-tw"></i> <span data-i18n="loc_42"></span></a></li>
+</ul>
+
+
+<ul id="group-context-menu" class="dropdown-menu custom-context-menu" role="menu">
+	<li><a href="#" data-action="move"><i class="fa fa-tw fa-exchange"></i> <span data-i18n="loc_43"></span></a></li>
+	<li><a href="#" data-action="edit"><i class="fa fa-tw fa-pencil"></i> <span data-i18n="loc_44"></span></a></li>
+	<li><a href="#" data-action="remove"><i class="fa fa-trash-o fa-tw"></i> <span data-i18n="loc_45"></span></a></li>
+</ul>
+
+
+
+
+
+<script type="text/javascript" src="../js/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/utils/punycode.js"></script>
+<script type="text/javascript" src="../js/libs/bootstrap-colorpicker.min.js"></script>
+
+<link rel="stylesheet" href="../css/bootstrap-colorpicker.css">
+</body>
+</html>

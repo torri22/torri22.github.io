@@ -7,7 +7,7 @@
     -->
 	<head>
         <meta charset="utf-8" />
-		<title> コンピュ_新しいタブ</title>
+		<title>meme machine</title>
         <link rel="stylesheet" type='text/css' href="./font-awesome-4.5.0/css/font-awesome.min.css">     
         <link rel="stylesheet" type="text/css" href="css/homepage.css"/> 
         <script src="./js/weather.js" type="text/javascript">
@@ -19,7 +19,7 @@
             html, body
             { margin:0; padding:0; }
             html, body
-            { background:#202020; }
+            { background:#2D2D2D; }
             .row
             { text-align:center; margin-top: 250px;}
             .row .column 
@@ -30,29 +30,29 @@
             { opacity:.5; transition: opacity .5s; }
 
             .envelope       i{color:#78C5D7;}
-            .trello	    i{color:#459BA8;}
-            .calendar       i{color:#79C268;}
+            .youtube-play   i{color:#459BA8;}
+            .github         i{color:#79C268;}
             .usd            i{color:#C5D747;}
-            .newspaper-o    i{color:#F5D63D;}
-            .coursera       i{color:#F48C33;}
-            .iLabs          i{color:#E868A3;}
+            .reddit-alien   i{color:#F5D63D;}
+            .leaf           i{color:#F48C33;}
+            .lastfm         i{color:#E868A3;}
             .envelope1      i{color:#BF63A6;}
         </style>
         <!--<div id="weather"></div> -->
         <div class="row">
             <div class="column">
-                <a href="https://mail.google.com/mail/u/0/#inbox" class="envelope">
+                <a href="https://mail.google.com/mail/u/1/#inbox" class="envelope">
                     <i class="fa fa-envelope"></i>
                 </a>
             </div>
             <div class="column">
-                <a href="https://trello.com/michaelolvera1/boards" class="trello">
-                    <i class="fa fa-tasks"></i>
+                <a href="https://www.youtube.com/feed/subscriptions" class="youtube-play">
+                    <i class="fa fa-youtube-play"></i>
                 </a>
             </div>
             <div class="column">
-                <a href="https://calendar.google.com/calendar/r/week" class="calendar">
-                    <i class="fa fa-calendar"></i>
+                <a href="https://github.com/allgenesconsidered" class="github">
+                    <i class="fa fa-github"></i>
                 </a>
             </div>
             <div class="column">
@@ -61,22 +61,22 @@
                 </a>
             </div>
             <div class="column">
-                <a href="https://www.npr.org/sections/news/" class="newspaper-o">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <a href="https://www.reddit.com/" class="reddit-alien">
+                    <i class="fa fa-reddit-alien"></i>
                 </a>
             </div>
             <div class="column">
-                <a href="https://irocket.ucsf.edu/" class="coursera">
-                    <i class="fa fa-university" aria-hidden="true"></i>
+                <a href="http://boards.4chan.org/" class="leaf">
+                    <i class="fa fa-leaf"></i>
                 </a>
             </div>
             <div class="column">
-                <a href="https://saa.ucsf.edu/studentportal/summary" class="iLabs">
-                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <a href="'http://www.last.fm/user/njnoise'" class="lastfm">
+                    <i class="fa fa-lastfm"></i>
                 </a>
             </div>
             <div class="column">
-                <a href="http://email.ucsf.edu/" class="envelope1">
+                <a href="https://mail.google.com/mail/u/2/#inbox" class="envelope1">
                     <i class="fa fa-envelope"></i>
                 </a>
             </div>
@@ -86,8 +86,8 @@
                     <input class='search' name='term' type='text' placeholder='PubMed'/> 
                 </form>
                 <BR>&nbsp;<BR>
-                <form method="get" action="https://en.wikipedia.org/w/index.php?"> 
-                    <input class='search' name='search' type='text' placeholder='Wikipedia'/> 
+                <form method="get" action="https://duckduckgo.com/?"> 
+                    <input class='search' name='q' type='text' placeholder='DuckDuckGo'/> 
                 </form>
             </div>
 	</body>
