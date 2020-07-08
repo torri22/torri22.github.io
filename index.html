@@ -17,23 +17,27 @@
         <style type="text/css" media="all">
             @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
             html, body
-            { margin:0; padding:0; }
+            { margin-top:0; padding:0; font-family: "Google Sans" !important; color: white;}
             html, body
             { background:#202020; }
             .row
-            { text-align:center; margin-top: 25px;}
-            .row:first-child
-            { text-align:center; margin-top: 250px;}
+            { text-align:center; margin-top: 25px;}            
+            .searchbox {
+                margin-top:20px;
+                margin-bottom:150px;
+            }
             .row .column 
-            { display: inline; letter-spacing:0.5em; }
+            { display: inline-grid; padding: 5px 100px;}
             .row .column a
-            { font-size: 450%; color:rgba(0,0,0,0) }
+            { font-size: 550%; color:rgba(0,0,0,0) }
             .row .column a:not(:hover)
-            { opacity:.5; transition: opacity .5s; }
-
-            .envelope       i{color:#78C5D7;}
+            { opacity:.5; transition: opacity .5s; text-align:unset}
+            
+            .envelope i{color:#0073c6;}
+            .envelope2 i{color:#94220e;}
             .trello	    i{color:#459BA8;}
-            .calendar       i{color:#79C268;}
+            .ambulance i{color: #f23168;}
+            .calendar       i{color:#843dbf;}
             .usd            i{color:#C5D747;}
             .newspaper-o    i{color:#F5D63D;}
             .coursera       i{color:#F48C33;}
@@ -41,202 +45,211 @@
             .envelope1      i{color:#BF63A6;}
         </style>
         <!--<div id="weather"></div> -->
+        <div class="searchbox">                
+            <form method="get" action="https://www.google.es/search?"> 
+                <input class='search' name='q' type='text' placeholder='Google'/> 
+            </form>
+            <BR>&nbsp;<BR>
+        </div>
         <div class="row">            
             <div class="column">
                 <a href="https://outlook.office.com/mail/inbox" class="envelope">
-                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-envelope" ></i>
                 </a>
+                <span>Correo Vector</span>
             </div>
             <div class="column">
-                <a href="https://gms.vectoritcgroup.com/ngms-web/view/login.html" class="envelope">
-                    <i class="fa fa-hourglass"></i>
+                <a href="https://gms.vectoritcgroup.com/ngms-web/view/login.html" class="calendar">
+                    <i class="fa fa-calendar"></i>
                 </a>
+                <span>GMS</span>
             </div>
             <div class="column">
-                <a href="http://soporte.vectoritcgroup.com/proactivanet/portal/" class="envelope">
-                    <i class="fa fa-support"></i>
+                <a href="http://soporte.vectoritcgroup.com/proactivanet/portal/" class="ambulance">
+                    <i class="fa fa-ambulance"></i>
                 </a>
+                <span>Soporte Vector</span>
             </div>
             <div class="column">
-                <a href="https://www.workflowy.com/" class="envelope">
+                <a href="https://www.workflowy.com/" class="tasks">
                     <i class="fa fa-tasks"></i>
                 </a>
+                <span>WorkFlowy</span>
             </div>
             <div class="column">
-                <a href="https://app.simplenote.com/" class="envelope">
+                <a href="https://app.simplenote.com/" class="sticky-note">
                     <i class="fa fa-sticky-note"></i>
                 </a>
+                <span>Simplenote</span>
             </div>
             <div class="column">
-                <a href="http://isblvdwebjd0010.scisb.isban.corp/Lanzadera/Santander%20Empresas%20-%20Rebranding.htm" class="envelope">
-                    <i class="fa fa-globe"></i>
+                <a href="http://isblvdwebjd0010.scisb.isban.corp/Lanzadera/Santander%20Empresas%20-%20Rebranding.htm" class="user">
+                    <i class="fa fa-user"></i>
                 </a>
+                <span>Preproducción</span>
             </div>
             <div class="column">
-                <a href="https://jira.ci.gsnet.corp/" class="envelope">
+                <a href="https://jira.ci.gsnet.corp/" class="list">
                     <i class="fa fa-list"></i>
                 </a>
+                <span>Jira</span>
             </div>
             <div class="column">
-                <a href="https://sanes-master-06.jenkins.alm.europe.cloudcenter.corp/sanes-master-06/job/sanes-nwe/" class="envelope">
+                <a href="https://sanes-master-06.jenkins.alm.europe.cloudcenter.corp/sanes-master-06/job/sanes-nwe/" class="arrow-up">
                     <i class="fa fa-arrow-up"></i>
                 </a>
+                <span>Jenkins</span>
             </div>
         </div>
         <div class="row">            
             <div class="column">
-                <a href="https://github.alm.europe.cloudcenter.corp/sanes-nwe" class="envelope">
+                <a href="https://github.alm.europe.cloudcenter.corp/sanes-nwe" class="github">
                     <i class="fa fa-github"></i>
                 </a>
+                <span>Github</span>
             </div>
             <div class="column">
-                <a href="https://app.zeplin.io/" class="envelope">
+                <a href="https://app.zeplin.io/" class="paint-brush">
                     <i class="fa fa-paint-brush"></i>
                 </a>
+                <span>Zeplin</span>
             </div>
             <div class="column">
-                <a href="https://api.san01.san.pre.bo1.paas.cloudcenter.corp:8443/console/" class="envelope">
+                <a href="https://api.san01.san.pre.bo1.paas.cloudcenter.corp:8443/console/" class="server">
                     <i class="fa fa-server"></i>
                 </a>
+                <span>OpenShift PRE</span>
             </div>
             <div class="column">
-                <a href="https://api.san01.san.dev.bo1.paas.cloudcenter.corp:8443/console/catalog" class="envelope">
+                <a href="https://api.san01.san.dev.bo1.paas.cloudcenter.corp:8443/console/catalog" class="server">
                     <i class="fa fa-server"></i>
                 </a>
+                <span>OpenShift DEV</span>
             </div>
             <div class="column">
-                <a href="https://www.elmundo.es/" class="envelope">
+                <a href="https://www.elmundo.es/" class="globe">
                     <i class="fa fa-globe"></i>
                 </a>
+                <span>El Mundo</span>
             </div>
             <div class="column">
-                <a href="https://elpais.com/" class="envelope">
+                <a href="https://elpais.com/" class="newspaper-o">
                     <i class="fa fa-newspaper-o"></i>
                 </a>
+                <span>El Pais</span>
             </div>
             <div class="column">
-                <a href="https://feedly.com" class="envelope">
+                <a href="https://feedly.com" class="feed">
                     <i class="fa fa-feed"></i>
                 </a>
+                <span>Feedly</span>
             </div>
             <div class="column">
-                <a href="https://www.reddit.com/me/m/all_personal/" class="envelope">
+                <a href="https://www.reddit.com/me/m/all_personal/" class="reddit">
                     <i class="fa fa-reddit"></i>
                 </a>
+                <span>Reddit</span>
             </div>
         </div>   
         <div class="row">            
             <div class="column">
-                <a href="http://www.as.com" class="envelope">
+                <a href="http://www.as.com" class="futbol-o">
                     <i class="fa fa-futbol-o"></i>
                 </a>
+                <span>As</span>
             </div>
             <div class="column">
-                <a href="http://youtube.com" class="envelope">
+                <a href="http://youtube.com" class="youtube">
                     <i class="fa fa-youtube"></i>
                 </a>
-            </div>
+                <span>Youtube</span>
+            </div>            
             <div class="column">
-                <a href="https://plaza.one/" class="envelope">
+                <a href="https://play.google.com/music/listen" class="music">
                     <i class="fa fa-music"></i>
                 </a>
-            </div>
+                <span>Google Music</span>
+            </div>            
             <div class="column">
-                <a href="https://www.moodymusic.online/" class="envelope">
-                    <i class="fa fa-music"></i>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://play.google.com/music/listen" class="envelope">
-                    <i class="fa fa-music"></i>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://coderadio.freecodecamp.org/" class="envelope">
-                    <i class="fa fa-music"></i>
-                </a>
-            </div>
-            <div class="column">
-                <a href="http://www.netflix.com" class="envelope">
+                <a href="http://www.netflix.com" class="film">
                     <i class="fa fa-film"></i>
                 </a>
+                <span>NetFlix</span>
             </div>
             <div class="column">
-                <a href="https://www.clipconverter.cc/" class="envelope">
+                <a href="https://www.clipconverter.cc/" class="exchange">
                     <i class="fa fa-exchange"></i>
                 </a>
+                <span>Clip Converter</span>
+            </div>
+            <div class="column">
+                <a href="https://stadia.google.com/home" class="gamepad">
+                    <i class="fa fa-gamepad"></i>
+                </a>
+                <span>Stadia</span>
+            </div>
+            <div class="column">
+                <a href="https://proxyrarbg.org/torrents.php" class="download">
+                    <i class="fa fa-download"></i>
+                </a>
+                <span>Rarbg</span>
+            </div>
+            <div class="column">
+                <a href="https://yts.mx/" class="download">
+                    <i class="fa fa-download"></i>
+                </a>
+                <span>YTS</span>
             </div>
         </div>           
         <div class="row">            
             <div class="column">
-                <a href="http://deviantart.com" class="envelope">
+                <a href="http://deviantart.com" class="deviantart">
                     <i class="fa fa-deviantart"></i>
                 </a>
+                <span>DeviantArt</span>
             </div>
             <div class="column">
-                <a href="https://web.whatsapp.com/" class="envelope">
+                <a href="https://web.whatsapp.com/" class="whatsapp">
                     <i class="fa fa-whatsapp"></i>
                 </a>
+                <span>WhatsApp</span>
             </div>
             <div class="column">
-                <a href="http://gmail.com" class="envelope">
+                <a href="http://gmail.com" class="envelope2">
                     <i class="fa fa-envelope"></i>
                 </a>
+                <span>Gmail</span>
             </div>
             <div class="column">
-                <a href="https://drive.google.com/drive/u/0/my-drive" class="envelope">
+                <a href="https://drive.google.com/drive/u/0/my-drive" class="google-plus">
                     <i class="fa fa-google-plus"></i>
                 </a>
+                <span>Google Drive</span>
             </div>
             <div class="column">
-                <a href="http://amazon.es" class="envelope">
+                <a href="http://amazon.es" class="amazon">
                     <i class="fa fa-amazon"></i>
                 </a>
+                <span>Amazon</span>
             </div>
             <div class="column">
-                <a href="https://cookidoo.es/organize/es-ES/my-recipes" class="envelope">
+                <a href="https://cookidoo.es/organize/es-ES/my-recipes" class="shopping-bag">
                     <i class="fa fa-shopping-bag"></i>
                 </a>
+                <span>Cookidoo</span>
             </div>
             <div class="column">
-                <a href="https://www.forocoches.com/" class="envelope">
+                <a href="https://www.forocoches.com/" class="car">
                     <i class="fa fa-car"></i>
                 </a>
+                <span>Forocoches</span>
             </div>
             <div class="column">
-                <a href="https://www.elotrolado.net/" class="envelope">
+                <a href="https://www.elotrolado.net/" class="gamepad">
                     <i class="fa fa-gamepad"></i>
                 </a>
+                <span>Elotrolado</span>
             </div>
-        </div>   
-        <div class="row">            
-            <div class="column">
-                <a href="https://stadia.google.com/home" class="envelope">
-                    <i class="fa fa-gamepad"></i>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://proxyrarbg.org/torrents.php" class="envelope">
-                    <i class="fa fa-download"></i>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://yts.mx/" class="envelope">
-                    <i class="fa fa-download"></i>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://nyaa.si/" class="envelope">
-                    <i class="fa fa-download"></i>
-                </a>
-            </div>
-
-        </div>          
-            <div>                
-                <form method="get" action="https://www.google.es"> 
-                    <input class='search' name='search' type='text' placeholder='Google'/> 
-                </form>
-                <BR>&nbsp;<BR>
-            </div>
+        </div>
 	</body>
 </html>
