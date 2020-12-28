@@ -1,286 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <!--
-       This i a person homepage that I made with code i stole mostly from /r/startpages as 
-       well as from other places. I don't take credit for anything except putting the pieces 
-       together. 
-    -->
-	<head>
-        <meta charset="utf-8" />
-		<title> Nueva Pestaña </title>
-        <link rel="stylesheet" type='text/css' href="./font-awesome-4.5.0/css/font-awesome.min.css">     
-        <link rel="stylesheet" type="text/css" href="css/homepage.css"/> 
-        <script src="./js/weather.js" type="text/javascript">
-        </script> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap" rel="stylesheet"> 
+        <title>New Tab</title>
     </head>
-	<body>
-        <style type="text/css" media="all">
-            @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-            html, body
-            { margin-top:0; padding:0; font-family: "Google Sans" !important; color: white; font-size: 18px;}
-            html, body
-            { background:#202020; }
-            .row
-            { text-align:center; margin-top: 25px;}            
-            .searchbox {
-                margin-top:20px;
-                margin-bottom:150px;
-            }
-            .row .column 
-            { display: inline-grid; padding: 5px 100px;}
-            .row .column a
-            { font-size: 550%; color:rgba(0,0,0,0) }
-            .row .column a:not(:hover)
-            { opacity:.5; transition: opacity .5s; text-align:unset}
-            i {
-                opacity: initial;
-            }
-            
-            .envelope i{color:#0073c6;}
-            .envelope2 i{color:#94220e;}
-            .trello	    i{color:#459BA8;}
-            .ambulance i{color: #f23168;}
-            .calendar       i{color:#843dbf;}
-            .usd            i{color:#C5D747;}
-            .newspaper-o    i{color:#F5D63D;}
-            .coursera       i{color:#F48C33;}
-            .iLabs          i{color:#E868A3;}
-            .envelope1      i{color:#BF63A6;}
-            .tasks       i{color:#b2cadb;}
-            .sticky-note  i{color:#3361cc;}
-            .user  i{color:#c2191a;}
-            .list  i{color:#023467;}
-            .arrow-up  i{color:#f3d8b9;}
-            .github  i{color:#e7e7e7;}
-            .paint-brush  i{color:#f0972d;}
-            .server  i{color:#eb2126;}
-            .server2  i{color:#85ea2d;}
-            .globe  i{color:#6887a6;}
-            .newspaper-o  i{color:#3489b5;}
-            .feed  i{color:#0f8c0a;}
-            .reddit  i{color:#fb6b01;}
-            .futbol-o  i{color:#ca0a12;}
-            .youtube  i{color:#fe4c40;}
-            .music  i{color:#ffd119;}
-            .film  i{color:#ae0000;}
-            .exchange  i{color:#31778b;}
-            .gamepad  i{color:#f0442a;}
-            .gamepad2  i{color:#38592e;}
-            .download  i{color:#4b6fc1;}
-            .download2  i{color:#1ed760;}
-            .deviantart  i{color:#21c94f;}
-            .whatsapp  i{color:#0dc143;}
-            .google-plus  i{color:#fee900;}
-            .shopping-bag  i{color:#109045;}
-            .amazon  i{color:#f99500;}
-            .car  i{color:#38dfad;}
-        </style>
-        <!--<div id="weather"></div> -->
-        <div class="searchbox">                
-            <form method="get" action="https://www.google.es/search?"> 
-                <input class='search' name='q' type='text' placeholder='Google'/> 
-            </form>
-            <BR>&nbsp;<BR>
+    <body>
+        <div class="info">
+            <p id="time"></p><br>
+            <h1 id="greeting"></h1>
         </div>
-        <div class="row">            
-            <div class="column">
-                <a href="https://outlook.office.com/mail/inbox" class="envelope">
-                    <i class="fa fa-envelope" ></i>
-                </a>
-                <span>Correo Vector</span>
+        <hr>
+        <div class="lists">
+			<div class="social">
+                <p class="list_title" id="s">Personal</p>
+                <a href="http://gmail.com" id="gmail">gmail</a><br>
+                <a href="https://web.whatsapp.com/" id="whatsapp">whatsapp</a><br>
+				<a href="https://stadia.google.com/home" id="stadia">stadia</a><br>
+				<a href="https://cookidoo.es/organize/es-ES/my-recipes" id="cookidoo">cookidoo</a><br>
+				<a href="https://www.workflowy.com/" id="workflowy">workflowy</a><br>
+				<a href="https://drive.google.com/drive/u/0/my-drive" id="drive">google drive</a><br>
+				<a href="https://app.simplenote.com/" id="simplenote">simplenote</a>
             </div>
-            <div class="column">
-                <a href="https://gms.vectoritcgroup.com/ngms-web/view/login.html" class="calendar">
-                    <i class="fa fa-calendar"></i>
-                </a>
-                <span>GMS</span>
+            <div class="watch">
+                <p class="list_title" id="w">Multimedia</p>
+                <a href="https://www.youtube.com" id="youtube">youtube</a><br>
+				 <a href="https://open.spotify.com" id="spotify">spotify</a><br>
+				<a href="https://coderadio.freecodecamp.org/" id="coderadio">coderadio</a><br>
+				<a href="https://play.google.com/music/listen" id="music">google music</a><br>
+                <a href="https://www.clipconverter.cc/" id="converter">clip converter</a><br>
+				<a href="https://proxyrarbg.org/torrents.php" id="rarbg">rarbg</a><br>
+				<a href="https://www.twitch.tv/" id="twitch">twitch</a><br>
+				<a href="http://deviantart.com" id="deviantart">deviantart</a><br>
+                <a href="https://www.netflix.com/browse" id="netflix">netflix</a>
             </div>
-            <div class="column">
-                <a href="http://soporte.vectoritcgroup.com/proactivanet/portal/" class="ambulance">
-                    <i class="fa fa-ambulance"></i>
-                </a>
-                <span>Soporte Vector</span>
+            <div class="dev">
+                <p class="list_title" id="n">Noticias</p>
+                <a href="https://www.elmundo.es/" id="mundo">el mundo</a><br>
+                <a href="https://elpais.com/" id="pais">el pais</a><br>
+				<a href="http://www.as.com" id="as">as</a><br>
+				<a href="https://feedly.com" id="feedly">feedly</a><br>
+				<a href="https://www.reddit.com/me/m/all_personal/" id="reddit">reddit</a><br>
+				<a href="https://9gag.com/" id="9gag">9gag</a><br>
+				<a href="https://www.elotrolado.net/" id="elotrolado">elotrolado</a><br>
+				<a href="https://www.forocoches.com/" id="forocoches">forocoches</a><br>
+                <a href="https://crackwatch.com/" id="crackwatch">crackwatch</a>
             </div>
-            <div class="column">
-                <a href="https://www.workflowy.com/" class="tasks">
-                    <i class="fa fa-tasks"></i>
-                </a>
-                <span>WorkFlowy</span>
+			<div class="dev">
+                <p class="list_title" id="d">Compras</p>
+                <a href="https://clubvectoritcgroup.empleadosvip.com/" id="club">club vector</a><br>
+                <a href="http://amazon.es" id="amazon">amazon</a><br>
+				<a href="https://www.ubereats.com/es-en" id="uber">uber eats</a>
             </div>
-            <div class="column">
-                <a href="https://app.simplenote.com/" class="sticky-note">
-                    <i class="fa fa-sticky-note"></i>
-                </a>
-                <span>Simplenote</span>
+            <div class="linux">
+                <p class="list_title" id="l">Curro</p>
+                <a href="https://outlook.office.com/mail/inbox" id="outlook">outlook</a><br>
+                <a href="https://cjoc.jenkins.alm.europe.cloudcenter.corp/cjoc/login" id="jenkins">jenkins</a><br>
+				<a href="http://localhost:4200/#/lanzadera" id="local">local</a><br>
+				<a href="http://isblvdwebjd0010.scisb.isban.corp/Lanzadera/Santander%20Empresas%20-%20Rebranding.htm" id="pre">pre</a><br>
+				<a href="https://jira.alm.europe.cloudcenter.corp/" id="jira">jira</a><br>
+				<a href="https://github.alm.europe.cloudcenter.corp/sanes-nwe/" id="github">github</a><br>
+				<a href="http://soporte.vectoritcgroup.com/proactivanet/portal/" id="incidencias">incidencias</a><br>
+				<a href="https://gms.vectoritcgroup.com/ngms-web/view/login.html" id="gms">gms</a><br>
+				<a href="https://api.san01.san.pre.bo1.paas.cloudcenter.corp:8443/console/" id="paasdev">paas dev</a><br>
+				<a href="https://api.san01.san.pre.bo1.paas.cloudcenter.corp:8443/login" id="paaspre">paas pre</a><br>
+				<a href="https://app.zeplin.io/" id="zeplin">zeplin</a><br>
+				<a href="https://app.simplenote.com/" id="simplenote">simplenote</a>
             </div>
-            <div class="column">
-                <a href="http://isblvdwebjd0010.scisb.isban.corp/Lanzadera/Santander%20Empresas%20-%20Rebranding.htm" class="user">
-                    <i class="fa fa-user"></i>
-                </a>
-                <span>Preproducción</span>
-            </div>
-            <div class="column">
-                <a href="https://jira.ci.gsnet.corp/" class="list">
-                    <i class="fa fa-list"></i>
-                </a>
-                <span>Jira</span>
-            </div>
-            <div class="column">
-                <a href="https://sanes-master-06.jenkins.alm.europe.cloudcenter.corp/sanes-master-06/job/sanes-nwe/" class="arrow-up">
-                    <i class="fa fa-arrow-up"></i>
-                </a>
-                <span>Jenkins</span>
-            </div>
+			
         </div>
-        <div class="row">            
-            <div class="column">
-                <a href="https://github.alm.europe.cloudcenter.corp/sanes-nwe" class="github">
-                    <i class="fa fa-github"></i>
-                </a>
-                <span>Github</span>
-            </div>
-            <div class="column">
-                <a href="https://app.zeplin.io/" class="paint-brush">
-                    <i class="fa fa-paint-brush"></i>
-                </a>
-                <span>Zeplin</span>
-            </div>
-            <div class="column">
-                <a href="https://api.san01.san.pre.bo1.paas.cloudcenter.corp:8443/console/" class="server">
-                    <i class="fa fa-server"></i>
-                </a>
-                <span>OpenShift PRE</span>
-            </div>
-            <div class="column">
-                <a href="https://api.san01.san.dev.bo1.paas.cloudcenter.corp:8443/console/catalog" class="server2">
-                    <i class="fa fa-server"></i>
-                </a>
-                <span>OpenShift DEV</span>
-            </div>
-            <div class="column">
-                <a href="https://www.elmundo.es/" class="globe">
-                    <i class="fa fa-globe"></i>
-                </a>
-                <span>El Mundo</span>
-            </div>
-            <div class="column">
-                <a href="https://elpais.com/" class="newspaper-o">
-                    <i class="fa fa-newspaper-o"></i>
-                </a>
-                <span>El Pais</span>
-            </div>
-            <div class="column">
-                <a href="https://feedly.com" class="feed">
-                    <i class="fa fa-feed"></i>
-                </a>
-                <span>Feedly</span>
-            </div>
-            <div class="column">
-                <a href="https://www.reddit.com/me/m/all_personal/" class="reddit">
-                    <i class="fa fa-reddit"></i>
-                </a>
-                <span>Reddit</span>
-            </div>
-        </div>   
-        <div class="row">            
-            <div class="column">
-                <a href="http://www.as.com" class="futbol-o">
-                    <i class="fa fa-futbol-o"></i>
-                </a>
-                <span>As</span>
-            </div>
-            <div class="column">
-                <a href="http://youtube.com" class="youtube">
-                    <i class="fa fa-youtube"></i>
-                </a>
-                <span>Youtube</span>
-            </div>            
-            <div class="column">
-                <a href="https://play.google.com/music/listen" class="music">
-                    <i class="fa fa-music"></i>
-                </a>
-                <span>Google Music</span>
-            </div>            
-            <div class="column">
-                <a href="http://www.netflix.com" class="film">
-                    <i class="fa fa-film"></i>
-                </a>
-                <span>NetFlix</span>
-            </div>
-            <div class="column">
-                <a href="https://www.clipconverter.cc/" class="exchange">
-                    <i class="fa fa-exchange"></i>
-                </a>
-                <span>Clip Converter</span>
-            </div>
-            <div class="column">
-                <a href="https://stadia.google.com/home" class="gamepad">
-                    <i class="fa fa-gamepad"></i>
-                </a>
-                <span>Stadia</span>
-            </div>
-            <div class="column">
-                <a href="https://proxyrarbg.org/torrents.php" class="download">
-                    <i class="fa fa-download"></i>
-                </a>
-                <span>Rarbg</span>
-            </div>
-            <div class="column">
-                <a href="https://yts.mx/" class="download2">
-                    <i class="fa fa-download"></i>
-                </a>
-                <span>YTS</span>
-            </div>
-        </div>           
-        <div class="row">            
-            <div class="column">
-                <a href="http://deviantart.com" class="deviantart">
-                    <i class="fa fa-deviantart"></i>
-                </a>
-                <span>DeviantArt</span>
-            </div>
-            <div class="column">
-                <a href="https://web.whatsapp.com/" class="whatsapp">
-                    <i class="fa fa-whatsapp"></i>
-                </a>
-                <span>WhatsApp</span>
-            </div>
-            <div class="column">
-                <a href="http://gmail.com" class="envelope2">
-                    <i class="fa fa-envelope"></i>
-                </a>
-                <span>Gmail</span>
-            </div>
-            <div class="column">
-                <a href="https://drive.google.com/drive/u/0/my-drive" class="google-plus">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-                <span>Google Drive</span>
-            </div>
-            <div class="column">
-                <a href="http://amazon.es" class="amazon">
-                    <i class="fa fa-amazon"></i>
-                </a>
-                <span>Amazon</span>
-            </div>
-            <div class="column">
-                <a href="https://cookidoo.es/organize/es-ES/my-recipes" class="shopping-bag">
-                    <i class="fa fa-shopping-bag"></i>
-                </a>
-                <span>Cookidoo</span>
-            </div>
-            <div class="column">
-                <a href="https://www.forocoches.com/" class="car">
-                    <i class="fa fa-car"></i>
-                </a>
-                <span>Forocoches</span>
-            </div>
-            <div class="column">
-                <a href="https://www.elotrolado.net/" class="gamepad2">
-                    <i class="fa fa-gamepad"></i>
-                </a>
-                <span>Elotrolado</span>
-            </div>
+        <div class="mode_class"> 
+            <img src="ico/light.png" id="mode" width="32" height="32">
         </div>
-	</body>
+        <script async type="text/javascript" src="script.js"></script>
+    </body>
 </html>
