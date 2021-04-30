@@ -163,7 +163,7 @@ a:hover,
 input[id="searchbox"]:hover,
 input[id="searchbox"]:focus {
 	color: #1d2021;
-	background: #ffc400;
+	background: #bdbdbd;
 	transform: translateY(-3px);
 	transition: .2s;
 	box-shadow: 0 3px 10px rgba(2, 2, 2, 0.45);
