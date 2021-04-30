@@ -259,9 +259,10 @@ input[id="searchbox"] {
 	background: transparent;
 	border: none;
 
-	padding: 20px;
+	padding: 5px;
 	transition: .2s;
 	border-radius: 8px;
+	margin-top: 10px;
 }
 
 input[id="searchbox"]::placeholder {
