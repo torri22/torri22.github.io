@@ -1,80 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap" rel="stylesheet"> 
-        <title>New Tab</title>
-    </head>
-    <body>
-        <div class="info">
-            <p id="time"></p><br>
-            <h1 id="greeting"></h1>
-        </div>
-        <hr>
-        <div class="lists">
-			<div class="social">
-                <p class="list_title" id="s">Personal</p>
-                <a href="http://gmail.com" id="gmail">gmail</a><br>
-                <a href="https://web.whatsapp.com/" id="whatsapp">whatsapp</a><br>
-				<a href="https://stadia.google.com/home" id="stadia">stadia</a><br>
-				<a href="https://cookidoo.es/organize/es-ES/my-recipes" id="cookidoo">cookidoo</a><br>
-				<a href="https://www.workflowy.com/" id="workflowy">workflowy</a><br>
-				<a href="https://drive.google.com/drive/u/0/my-drive" id="drive">google drive</a><br>
-				<a href="https://app.simplenote.com/" id="simplenote">simplenote</a>
-            </div>
-            <div class="watch">
-                <p class="list_title" id="w">Multimedia</p>
-                <a href="https://www.youtube.com" id="youtube">youtube</a><br>
-				 <a href="https://open.spotify.com" id="spotify">spotify</a><br>
-				<a href="https://coderadio.freecodecamp.org/" id="coderadio">coderadio</a><br>
-				<a href="https://play.google.com/music/listen" id="music">google music</a><br>
-                <a href="https://www.clipconverter.cc/" id="converter">clip converter</a><br>
-				<a href="https://proxyrarbg.org/torrents.php" id="rarbg">rarbg</a><br>
-				<a href="https://www.twitch.tv/" id="twitch">twitch</a><br>
-				<a href="http://deviantart.com" id="deviantart">deviantart</a><br>
-                <a href="https://www.netflix.com/browse" id="netflix">netflix</a><br>
-		    <a href="https://showrss.info/" id="showRSS">showRss</a>
-            </div>
-            <div class="dev">
-                <p class="list_title" id="n">Noticias</p>
-                <a href="https://www.elmundo.es/" id="mundo">el mundo</a><br>
-                <a href="https://elpais.com/" id="pais">el pais</a><br>
-				<a href="http://www.as.com" id="as">as</a><br>
-				<a href="https://feedly.com" id="feedly">feedly</a><br>
-				<a href="https://www.reddit.com/me/m/all_personal/" id="reddit">reddit</a><br>
-				<a href="https://9gag.com/" id="9gag">9gag</a><br>
-				<a href="https://www.elotrolado.net/" id="elotrolado">elotrolado</a><br>
-				<a href="https://www.forocoches.com/" id="forocoches">forocoches</a><br>
-                <a href="https://crackwatch.com/" id="crackwatch">crackwatch</a>
-            </div>
-			<div class="dev">
-                <p class="list_title" id="d">Compras</p>
-                <a href="https://clubvectoritcgroup.empleadosvip.com/" id="club">club vector</a><br>
-                <a href="http://amazon.es" id="amazon">amazon</a><br>
-				<a href="https://www.ubereats.com/es-en" id="uber">uber eats</a>
-            </div>
-            <div class="linux">
-                <p class="list_title" id="l">Curro</p>
-                <a href="https://outlook.office.com/mail/inbox" id="outlook">outlook</a><br>
-                <a href="https://cjoc.jenkins.alm.europe.cloudcenter.corp/cjoc/login" id="jenkins">jenkins</a><br>
-				<a href="http://sgsl.isban.gs.corp/sgs/Index.action" id="sgs">sgs</a><br>
-				<a href="http://isblvdwebjd0010.scisb.isban.corp/Lanzadera/Santander%20Empresas%20-%20Rebranding.htm" id="pre">pre</a><br>
-				<a href="https://sanes.atlassian.net/jira/software/c/projects/ESDWEBEMPR/issues/" id="jira">jira</a><br>
-				<a href="https://github.alm.europe.cloudcenter.corp/sanes-nwe/" id="github">github</a><br>
-				<a href="http://soporte.vectoritcgroup.com/proactivanet/portal/" id="incidencias">incidencias</a><br>
-				<a href="https://gms.vectoritcgroup.com/ngms-web/view/login.html" id="gms">gms</a><br>
-				<a href="https://api.san01.san.dev.bo1.paas.cloudcenter.corp:8443/console/" id="paasdev">paas dev</a><br>
-				<a href="https://api.san01.san.pre.bo1.paas.cloudcenter.corp:8443/login" id="paaspre">paas pre</a><br>
-				<a href="https://app.zeplin.io/" id="zeplin">zeplin</a>
-            </div>
-			
-        </div>
-        <div class="mode_class"> 
-            <img src="ico/light.png" id="mode" width="32" height="32">
-        </div>
-        <script async type="text/javascript" src="script.js"></script>
-    </body>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="CAT.jpg">
+	<title>kkY's startpage for server : notlove</title>
+</head>
+
+<body>
+	<div class="tilt" data-tilt data-tilt-max="3" data-tilt-speed="3000" data-tilt-perspective="1000"
+		data-tilt-reverse="true">
+		<div class="card">
+			<div class="buttons">
+				<input type="checkbox" class="chb_theme" id="switch_theme">
+				<label class="btn_theme" for="switch_theme"></label>
+				<input type="checkbox" class="chb_weather" id="switch_weather">
+				<label class="btn_weather" for="switch_weather"></label>
+				<input type="checkbox" class="chb_todo" id="switch_todo">
+				<label class="btn_todo" for="switch_todo"></label>
+			</div>
+			<div class="weather-card">
+				<div class="weather-card__info">
+					<i id="icon"></i>
+					<p id="description"></p>
+					<p id="temp"></p>
+				</div>
+				<input id="city" type="text" placeholder="enter the name of the city" autocomplete="off">
+				<input id="key" type="text" placeholder="add your api key" autocomplete="off">
+			</div>
+			<div class="todo-card">
+				<form class="todo-card__form">
+					<input id="todo" placeholder="?" class="todo-card__form-input" type="text"
+						autocomplete="off">
+				</form>
+				<ul class="todo-card__list"></ul>
+			</div>
+			<div class="content">
+				<div class="links">
+					<a href="https://outlook.office.com/mail/inbox" target="_self">
+						<i class="fas fa-envelope-open-text"></i>
+					</a>
+					<a href="https://cjoc.jenkins.alm.europe.cloudcenter.corp/cjoc/login" target="_self">
+						<i class="fab fa-jenkins"></i>
+					</a>
+					<a href="http://sgsl.isban.gs.corp/sgs/Index.action" target="_self">
+						<i class="fab fa-octopus-deploy"></i>
+					</a>
+					<a href="http://isblvdwebjd0010.scisb.isban.corp/Lanzadera/Santander%20Empresas%20-%20Rebranding.htm" target="_self">
+						<i class="fab fa-envira"></i>
+					</a>
+					<a href="https://sanes.atlassian.net/jira/software/c/projects/ESDWEBEMPR/issues/" target="_self">
+						<i class="fab fa-jira"></i>
+					</a>
+					<a href="https://github.alm.europe.cloudcenter.corp/sanes-nwe/" target="_self">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="http://soporte.vectoritcgroup.com/proactivanet/portal/" target="_self">
+						<i class="fas fa-headset"></i>
+					</a>
+					<a href="https://gms.vectoritcgroup.com/ngms-web/view/login.html" target="_self">
+						<i class="far fa-calendar-alt"></i>
+					</a>
+					<a href="https://api.san01.san.dev.bo1.paas.cloudcenter.corp:8443/console/" target="_self">
+						<i class="fas fa-hourglass-end"></i>
+					</a>
+					<a href="https://api.san01.san.pre.bo1.paas.cloudcenter.corp:8443/login" target="_self">
+						<i class="fas fa-hourglass"></i>
+					</a>
+					<a href="https://app.zeplin.io/" target="_self">
+						<i class="fas fa-rocket"></i>
+					</a>
+					<a href="http://gmail.com/" target="_self">
+						<i class="far fa-envelope"></i>
+					</a>
+					<a href="https://web.whatsapp.com/" target="_self">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+					<a href="https://stadia.google.com/home" target="_self">
+						<i class="fas fa-gamepad"></i> 
+					</a>
+					<a href="https://cookidoo.es/organize/es-ES/my-recipes" target="_self">
+						<i class="fas fa-blender"></i>
+					</a>
+					<a href="https://www.workflowy.com/" target="_self">
+						<i class="fas fa-list-alt"></i>
+					</a>
+					<a href="https://drive.google.com/drive/u/0/my-drive" target="_self">
+						<i class="fab fa-google-drive"></i>
+					</a>
+					<a href="https://app.simplenote.com/" target="_self">
+						<i class="fas fa-check"></i>
+					</a>
+					<a href="https://www.youtube.com/" target="_self">
+						<i class="fab fa-youtube"></i>
+					</a>
+					
+					<a href="https://open.spotify.com/" target="_self">
+						<i class="fab fa-spotify"></i>
+					</a>
+					<a href="https://www.clipconverter.cc/" target="_self">
+						<i class="fas fa-random"></i>
+					</a>
+					<a href="https://proxyrarbg.org/torrents.php" target="_self">
+						<i class="fas fa-film"></i>
+					</a>
+					<a href="https://www.twitch.tv/" target="_self">
+						<i class="fab fa-twitch"></i>
+					</a>
+					<a href="http://deviantart.com/" target="_self">
+						<i class="fab fa-deviantart"></i>
+
+					</a>
+					<a href="https://www.netflix.com/browse" target="_self">
+						<i class="fab fa-neos"></i>
+					</a>
+					<a href="https://showrss.info/" target="_self">
+						<i class="fas fa-tv"></i>
+					</a>
+					<a href="https://www.elmundo.es/" target="_self">
+						<i class="fas fa-globe"></i>
+					</a>
+					<a href="https://elpais.com/" target="_self">
+							<i class="far fa-flag"></i>
+					</a>
+					<a href="http://www.as.com/" target="_self">
+						<i class="fab fa-lastfm"></i>
+					</a>
+					<a href="https://feedly.com/" target="_self">
+						<i class="fas fa-rss"></i>
+					</a>
+					<a href="https://www.reddit.com/me/m/all_personal/" target="_self">
+						<i class="fab fa-reddit-alien"></i>
+					</a>
+					<a href="https://9gag.com/" target="_self">
+						<i class="fas fa-laugh-squint"></i>
+					</a>
+					<a href="https://www.elotrolado.net/" target="_self">
+						<i class="fas fa-chess-pawn"></i>
+					</a>
+					<a href="https://www.forocoches.com/" target="_self">
+						<i class="fas fa-car-side"></i>
+					</a>
+					<a href="https://clubvectoritcgroup.empleadosvip.com/" target="_self">
+						<i class="fas fa-gifts"></i>
+					</a>
+					<a href="http://amazon.es/" target="_self">
+						<i class="fab fa-amazon"></i>
+					</a>
+					<a href="https://www.ubereats.com/es-en" target="_self">
+						<i class="fas fa-utensils"></i>
+					</a>
+					<a href="https://www.bankia.es/es/particulares" target="_self">
+						<i class="fas fa-bold"></i>
+					</a>
+					
+				</div>
+				<div class="search">
+					<input id="searchbox" placeholder="buscar" type="text" autocomplete="off">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/theme.js"></script>
+	<script src="js/weather.js"></script>
+	<script src="js/todo.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/vanilla-tilt.js"></script>
+
+</body>
+
 </html>
