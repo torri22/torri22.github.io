@@ -30,6 +30,7 @@ body {
     vertical-align: top;
     justify-content: center; 
     font-family: 'Overpass Mono', monospace;
+    text-align: center;
 }
 .watch, .social, .dev, .linux {
     display: flex;
