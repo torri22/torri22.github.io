@@ -127,7 +127,7 @@
 	};
 
 	function on(el, event, fn) {
-		el.addEventListener(event, fn, !IE11OrLess && captureMode);
+		// el.addEventListener(event, fn, !IE11OrLess && captureMode);
 	}
 
 	function off(el, event, fn) {
