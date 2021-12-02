@@ -37,6 +37,7 @@ body {
 }
 hr {
     color: #dee3de;
+    width: 200px;
 }
 a:visited, a:link, a:active {
     color: #bbb;
@@ -54,6 +55,7 @@ a:hover {
 }
 #time {
     font-size: 28px;
+    color: #dee3de;
     animation:blinking 5s infinite;
     }
     @keyframes blinking{
