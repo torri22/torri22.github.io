@@ -4,7 +4,7 @@ body {
 .info {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 10px;
     line-height: 0.1;
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
@@ -35,12 +35,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 40px;
-	padding-top:10px;
+    padding-top:10px;
 }
 hr {
-    margin-top: 40px;
     color: #dee3de;
-    width: 500px;
 }
 a:visited, a:link, a:active {
     color: #bbb;
