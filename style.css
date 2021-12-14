@@ -50,6 +50,10 @@ ul {
 
 }
 
+li {
+    margin: 5px;
+}
+
 /* div.user {
     background-color: #24283b;
     color: white;
