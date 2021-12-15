@@ -88,6 +88,10 @@ a {
 
 }
 
+a:hover {
+    color: #980404;
+}
+
 input {
     background-color: #1e1e1e;
     font: 16px 'Manrope', monospace;
