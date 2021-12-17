@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
 
 html,body {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     background: #1e1e1e;
     position: absolute;
@@ -12,7 +12,6 @@ html,body {
     transform: translate(-50%, -50%);
     padding: 0px;
     margin: 0px;
-    font-weight: 600;
     
 }
 
