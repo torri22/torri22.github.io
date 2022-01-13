@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Displa&display=swap');
 
 
 
 html,body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'DM Serif Display', sans-serif;
     font-size: 18px;
     background: #1e1e1e;
     position: absolute;
@@ -93,7 +93,7 @@ a:hover {
 
 input {
     background-color: #1e1e1e;
-    font: 16px 'Manrope', monospace;
+    font: 16px 'DM Serif Display', monospace;
     color: #e0c1a6;
     height: 100%;
     width: 100%;
