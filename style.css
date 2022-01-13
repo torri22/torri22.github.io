@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 
 
 
 html,body {
-    font-family: 'Grand Hotel', sans-serif;
+    font-family: 'Megrim', sans-serif;
     font-size: 18px;
     background: #1e1e1e;
     position: absolute;
@@ -93,7 +93,7 @@ a:hover {
 
 input {
     background-color: #1e1e1e;
-    font: 16px 'Grand Hotel', monospace;
+    font: 16px 'Megrim', monospace;
     color: #e0c1a6;
     height: 100%;
     width: 100%;
