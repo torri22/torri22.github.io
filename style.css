@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Displa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Patrick+Hand+SC&display=swap');
 
 
 html,body {
     font-family: 'Patrick Hand SC', sans-serif;
-    font-size: 18px;
+    font-size: 33px;
     /*background: #1e1e1e;
     position: absolute;
     top: 50%;
@@ -57,7 +56,7 @@ ul {
 }
 
 li {
-    margin: 13px;
+    /* margin: 13px; */
 }
 
 /* div.user {
@@ -88,8 +87,8 @@ div.taskbar {
     width: 300px;
     float:right;
     text-align: right;
-    font-size: 78px;
-    font-family: 'Meow Script';
+    font-size: 72px;
+    font-family: 'Patrick Hand SC', sans-serif;
     font-weight: bold;
     
 }
@@ -106,7 +105,7 @@ a:hover {
 
 input {
     background-color: #1e1e1e;
-    font: 16px 'Patrick Hand SC', monospace;
+    font: 'Patrick Hand SC', sans-serif;
     color: #e0c1a6;
     height: 100%;
     width: 100%;
