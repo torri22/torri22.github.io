@@ -78,7 +78,7 @@ div.taskbar {
 
 .clock-box {
     /*position: relative;*/
-    color: #cdcac2;
+    color: #dfbc92;
     /*background-color: #1e1e1e;*/
     /*flex-direction: row;*/
     /*display: flex;*/
@@ -95,7 +95,7 @@ div.taskbar {
 
 a {
     text-decoration: none;
-    color: #cdcac2;
+    color: #dfbc92;
 
 }
 
