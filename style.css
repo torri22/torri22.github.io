@@ -36,8 +36,8 @@ nav {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 0px;
-    /*text-align: center;
-    border: 2px solid #980404;*/
+    text-align: center;
+    /*border: 2px solid #980404;*/
     border-top: none;
     padding-top: 5px;
     padding-bottom: 5px;
