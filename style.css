@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Displa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
 
 
@@ -77,13 +78,19 @@ div.taskbar {
 } */
 
 .clock-box {
-    position: relative;
-    color: #e0c1a6;
-    background-color: #1e1e1e;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
+    /*position: relative;*/
+    color: #cdcac2;
+    /*background-color: #1e1e1e;*/
+    /*flex-direction: row;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    padding: 11% 4%;
+    width: 300px;
+    float:right;
+    text-align: right;
+    font-size: 32px;
+    font-family: 'Meow Script';
+    
 }
 
 a {
