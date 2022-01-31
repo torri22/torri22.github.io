@@ -10,7 +10,7 @@
 
         
 
-        <div id="clockbox"></div>
+        <!--<div id="clockbox"></div>-->
 
         <script type="text/javascript">
         function GetClock(){
@@ -38,7 +38,7 @@ function GetClock(){
 var d=new Date();
 var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
 
-var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+var clocktext=""+tday[nday]+" "+tmonth[nmonth]+" "+ndate+" "+nyear+"";
 document.getElementById('datebox').innerHTML=clocktext;
 }
 
