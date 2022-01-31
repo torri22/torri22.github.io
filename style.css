@@ -88,8 +88,9 @@ div.taskbar {
     width: 300px;
     float:right;
     text-align: right;
-    font-size: 32px;
+    font-size: 78px;
     font-family: 'Meow Script';
+    font-weight: bold;
     
 }
 
