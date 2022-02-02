@@ -56,7 +56,7 @@ ul {
 }
 
 li {
-    /* margin: 13px; */
+    margin: 13px;
 }
 
 /* div.user {
@@ -78,7 +78,7 @@ div.taskbar {
 
 .clock-box {
     /*position: relative;*/
-    color: #dfbc92;
+    color: #dbccbc;
     /*background-color: #1e1e1e;*/
     /*flex-direction: row;*/
     /*display: flex;*/
@@ -95,7 +95,7 @@ div.taskbar {
 
 a {
     text-decoration: none;
-    color: #dfbc92;
+    color: #dbccbc;
 
 }
 
