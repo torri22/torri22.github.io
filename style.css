@@ -4,7 +4,7 @@
 
 html,body {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     /*background: #1e1e1e;
     position: absolute;
     top: 50%;
@@ -34,7 +34,7 @@ nav {
     color: #980404;
     /*background-color: ##1e1e1e;*/
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 22% 22% 22% 22%;
     margin-top: 0px;
     text-align: center;
     /*border: 2px solid #980404;*/
