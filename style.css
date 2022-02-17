@@ -39,7 +39,8 @@ nav {
     border-top: none;
     padding-top: 5px;
     padding-bottom: 5px;
-    
+    height: 98%;
+    backdrop-filter: blur(3px);
     
 }
 
