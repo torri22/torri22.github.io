@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family==Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
 html,body {
-    font-family: 'Patua One', monospace;
+    font-family: 'Patua One', cursive;
     font-size: 24px;
     /*background: #1e1e1e;
     position: absolute;
@@ -87,7 +87,7 @@ div.taskbar {
     float:right;
     text-align: right;
     font-size: 29px;
-    font-family: 'Patua One', monospace;
+    font-family: 'Patua One', cursive;
     
 }
 
@@ -103,7 +103,7 @@ a:hover {
 
 input {
     background-color: #1e1e1e;
-    font-family: 'Patua One', monospace;
+    font-family: 'Patua One', cursive;
     color: #e0c1a6;
     height: 100%;
     width: 100%;
