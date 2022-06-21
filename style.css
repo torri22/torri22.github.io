@@ -49,13 +49,11 @@ ul {
     /*margin-left: -35px;*/
     margin-top: 25px;
     /*margin-bottom: 5px;*/
-
-
-
+    flex-direction: column-reverse;
+    display: flex;
 }
-
 li {
-    margin: 13px;
+    margin: 7px;
 }
 
 /* div.user {
