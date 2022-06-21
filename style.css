@@ -12,9 +12,9 @@ html,body {
     margin: 0px; 
     background-image: url(calvin.png);
     background-repeat: no-repeat;    
-    background-color: #040205;
+    /*background-color: #040205;
     background-position-y: bottom;
-    background-position-x: right;
+    background-position-x: right;*/
     height: 100%;
 }
 
@@ -40,7 +40,7 @@ nav {
     padding-top: 5px;
     padding-bottom: 5px;
     height: 98%;
-    backdrop-filter: blur(3px);
+   /* backdrop-filter: blur(3px);*/
     
 }
 
