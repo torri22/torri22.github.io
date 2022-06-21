@@ -32,9 +32,9 @@ nav {
     color: #980404;
     /*background-color: ##1e1e1e;*/
     display: grid;
-    grid-template-columns: 26% 22% 22% 22%;
+    grid-template-columns: 30% 22% 22% 22%;
     margin-top: 0px;
-    text-align: center;
+    text-align: right;
     /*border: 2px solid #980404;*/
     border-top: none;
     padding-top: 5px;
