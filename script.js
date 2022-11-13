@@ -44,7 +44,7 @@ function dark_colors() {
     let link = document.getElementsByTagName('a');
     let mode_id = document.getElementById("mode");
     document.body.style.background = "#0C131F";
-    <!--document.getElementById("greeting").style.color = "#dee3de";-->
+    document.getElementById("greeting").style.color = "#dee3de";
     mode_id.src = "ico/light.png";
     mode_id.style.filter = "invert(100%) sepia(0%) saturate(1620%) hue-rotate(8deg) brightness(94%) contrast(88%)";
     for (i = 0; i < link.length; i++) 
@@ -56,7 +56,7 @@ function light_colors() {
     let link = document.getElementsByTagName('a');
     let mode_id = document.getElementById("mode");
     document.body.style.background = "#FFE8D4";
-    <!--document.getElementById("greeting").style.color = "#767283";-->
+    document.getElementById("greeting").style.color = "#767283";
     mode_id.src = "ico/dark.png";
     mode_id.style.filter = "invert(58%) sepia(12%) saturate(482%) hue-rotate(148deg) brightness(94%) contrast(86%)";
     for (i = 0; i < link.length; i++) 
