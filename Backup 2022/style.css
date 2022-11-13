@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+html,body {
+    font-family: 'Patua One', cursive;
+    font-size: 24px;
+    /*background: #1e1e1e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);*/
+    padding: 0px;
+    margin: 0px; 
+    background-image: url(calvin.png);
+    background-repeat: no-repeat;    
+    /*background-color: #040205;
+    background-position-y: bottom;
+    background-position-x: right;*/
+    height: 100%;
+}
+
+img {
+    height: 525px;
+    width: 1000px;
+    object-fit: cover;
+    border: 2px solid #980404;
+    /* border-bottom: none; */
+    margin-bottom: -3px;
+
+}
+
+nav {
+    color: #980404;
+    /*background-color: ##1e1e1e;*/
+    display: grid;
+    grid-template-columns: 30% 22% 22% 22%;
+    margin-top: 0px;
+    text-align: right;
+    /*border: 2px solid #980404;*/
+    border-top: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 98%;
+   /* backdrop-filter: blur(3px);*/
+    
+}
+
+ul {
+    list-style-type: none;
+    /*margin-left: -35px;*/
+    margin-top: 25px;
+    /*margin-bottom: 5px;*/
+    flex-direction: column-reverse;
+    display: flex;
+}
+li {
+    margin: 7px;
+}
+
+/* div.user {
+    background-color: #24283b;
+    color: white;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding: 3px;
+    border: 1px solid white;
+}
+
+div.taskbar {
+    color: #a9b1d6;
+    background-color: #24283b;
+    border: 1px solid #a9b1d6;
+    padding: 3px;   
+} */
+
+.clock-box {
+    /*position: relative;*/
+    color: #432e29;
+    /*background-color: #1e1e1e;*/
+    /*flex-direction: row;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    padding: 2%;
+    width: 300px;
+    float:right;
+    text-align: right;
+    font-size: 29px;
+    font-family: 'Patua One', cursive;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #432e29;
+C
+}
+
+a:hover {
+    color: #ebb905;
+}
+
+input {
+    background-color: #1e1e1e;
+    font-family: 'Patua One', cursive;
+    color: #e0c1a6;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #980404;
+    border-top: none;
+    text-align: center;
+    margin-top: 0px;
+    outline: none;
+    padding: 5px;
+  }
+
+input::placeholder {
+    color: #e0c1a6;
+}
