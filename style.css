@@ -1,262 +1,86 @@
-body {
-    background-color: #0C131F;
-}
-.info {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    line-height: 0.1;
-    text-align: center;
-    font-family: 'Share Tech Mono', monospace;
-}
-@media all and (max-width: 550px) {
-    .info, hr
-    {
-        visibility: hidden;
-        margin: auto;
-    }
-    .watch, .social, .dev, .linux {
-        flex-direction: column;
-        width: auto;
-    }
-}
-.list_title
-{
-    font-size: 35px;
-}
-.lists {
-    display: flex;
-    flex-wrap: wrap;
-    vertical-align: top;
-    justify-content: center; 
-    font-family: 'Overpass Mono', monospace;
-}
-.watch, .social, .dev, .linux {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-	padding-top:10px;
-}
-hr {
-    margin-top: 40px;
-    color: #dee3de;
-    width: 500px;
-}
-a:visited, a:link, a:active {
-    color: #bbb;
-    text-decoration: none;
-    font-size: 26px;
-    text-indent: 2px;
-    line-height: 1.5;
-}
-a:hover {
-    color: #97cdfd !important
-}
-#greeting {
-    font-size: 32px;
-    color: #dee3de;
-}
-#time {
-    font-size: 28px;
-    animation:blinking 5s infinite;
-    }
-    @keyframes blinking{
-    0%{     color: #1383F2; }
-    20%{    color: #459EF7; }
-    40%{    color: #77B8F8; }
-    60%{    color: #77B8F8; }
-    80%{    color: #459EF7; }
-    100%{   color: #1383F2; }
+:root {
+	--font: "Cartograph CF";
+	--bgcolor: #1f1d2e;
+	--linkcolor: #e0def4;
 }
 
-#w {
-    animation:w_blink 5s infinite;
-    }
-    @keyframes w_blink{
-    0%{     color: #9866ED; }
-    20%{    color: #9B67F5; }
-    40%{    color: #9873D9; }
-    60%{    color: #834CE0; }
-    80%{    color: #7739E3; }
-    100%{   color: #9866ED; }
+/*-----------------------------------------------------------*/
+input {
+    height: inherit;
+    width: 680px;
+    background: #26233a;
+    color: #ebbcba;
+    font: "Cartograph CF";
+    font-weight: mono;
+    line-height: 1.8em;
+    box-shadow: 1px 1px 3px #000000;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+    padding: 7px 14px;
+    font-size: 18;
+    grid-column: 1 / -1;
+    margin: 0px 0px 30px 0px;;
 }
-#s {
-    animation:s_blink 5s infinite;
-    }
-    @keyframes s_blink{
-    0%{     color: #5BE3AF; }
-    20%{    color: #22AB76; }
-    40%{    color: #1FC485; }
-    60%{    color: #5EB895; }
-    80%{    color: #66D9AD; }
-    100%{   color: #5BE3AF; }
+body {
+/*
+	background-image: url('../background/bg.jpg');
+	background-repeat : no-repeat;
+*/
+	background-color: #191724;
+	background-size: cover;
 }
-#d {
-    animation:d_blink 5s infinite;
-    }
-    @keyframes d_blink{
-    0%{     color: #D1B22A; }
-    20%{    color: #D9C777; }
-    40%{    color: #D1B22A; }
-    60%{    color: #CCA806; }
-    80%{    color: #E0BE24; }
-    100%{   color: #D1B22A; }
-}
-#l {
-    animation:l_blink 5s infinite;
-    }
-    @keyframes l_blink{
-    0%{     color: #CF342B; }
-    20%{    color: #F2746D; }
-    40%{    color: #CF342B; }
-    60%{    color: #F7665E; }
-    80%{    color: #F2746D; }
-    100%{   color: #CF342B; }
-}
-#n {
-    animation:n_blink 5s infinite;
-    }
-    @keyframes n_blink{
-    0%{     color: #797a7d; }
-    20%{    color: #9da1ad; }
-    40%{    color: #c8ccd6; }
-    60%{    color: #c8ccd6; }
-    80%{    color: #9da1ad; }
-    100%{   color: #797a7d; }
-}
-#youtube:hover {
-    color: #FF0000 !important
-}
-#netflix:hover{
-    color: #E50914 !important
-}
-#twitch:hover{
-    color: #6441a5 !important
-}
-#reddit:hover{
-    color: #FF4500 !important
-}
-#gmail:hover{
-    color: #EA4335 !important
-}
-#whatsapp:hover{
-    color: #00AF9C !important
-}
-#stadia:hover{
-    color: #F94721 !important
-}
-#cookidoo:hover{
-    color: #009A3D !important
-}
-#workflowy:hover{
-    color: #B2CADB !important
-}
-#drive:hover{
-    color: #34A853 !important
-}
-#simplenote:hover{
-    color: #3361CC !important
-}
-#spotify:hover{
-    color: #1DB954 !important
-}
-#coderadio:hover{
-    color: #512925 !important
-}
-#music:hover{
-    color: #FF5722 !important
-}
-#converter:hover{
-    color: #0D637A !important
-}
-#rarbg:hover{
-    color: #3860BB !important
-}
-#deviantart:hover{
-    color: #00E59B !important
-}
-#mundo:hover{
-    color: #216087 !important
-}
-#pais:hover{
-    color: #9CC6DA !important
-}
-#as:hover{
-    color: #CE0000 !important
-}
-#feedly:hover{
-    color: #249540 !important
-}
-#9gag:hover{
-    color: #000000 !important
-}
-#elotrolado:hover{
-    color: #3D6133 !important
-}
-#forocoches:hover{
-    color: #E7A189 !important
-}
-#crackwatch:hover{
-    color: #DA1106 !important
-}
-#club:hover{
-    color: #FD5E81 !important
-}
-#amazon:hover{
-    color: #FF9900 !important
-}
-#uber:hover{
-    color: #06C167 !important
-}
-#outlook:hover{
-    color: #005DA6 !important
-}
-#jenkins:hover{
-    color: #D53232 !important
-}
-#local:hover{
-    color: #EC0000 !important
-}
-#pre:hover{
-    color: #EC0000 !important
-}
-#jira:hover{
-    color: #197CF7 !important
-}
-#github:hover{
-    color: #302F2F !important
-}
-#incidencias:hover{
-    color: #FE7118 !important
-}
-#gms:hover{
-    color: #A352C6 !important
-}
-#paasdev:hover{
-    color: #F54D01 !important
-}
-#paaspre:hover{
-    color: #F54D01 !important
-}
-#zeplin:hover{
-    color: #FDBD39 !important
-}
-#simplenote:hover{
-    color: #618DF2 !important
-}
-.mode_class{
-    /*display: flex;
+
+.everything {
+	display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 200px;*/
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 20px;
+    align-items: center;
+    text-align: center;
 }
-#mode {
-   filter: invert(100%) sepia(0%) saturate(1620%) hue-rotate(8deg) brightness(94%) contrast(88%)
+
+.link {
+	display: inline-grid;
+	margin: 1%;
+	//height: 185px;
+	width: 185px;
+	text-align: center;
+	padding-left: 0%;
+	background-color: var(--bgcolor);
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px #000000;
 }
-#mode:hover {
-    filter: invert(56%) sepia(45%) saturate(6917%) hue-rotate(173deg) brightness(96%) contrast(82%) !important
+
+.box {
+	width: 1295px;
+}
+
+ul {
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+a {
+	display: block;
+	line-height: 2.4em;
+	font-family: var(--font);
+	color: var(--linkcolor);
+	font-size: 1rem;
+	text-decoration: none;
+	outline: none;
+	transition: .2s;
+}
+
+a:hover {
+	color: #9ccfd8;
+}
+
+.time {
+    font-family: "Cartograph CF"; monospace;
+    font-weight: mono;
+    font-size: 5.5rem;
+    margin: 50px 0px 50px 0px;
+    color: var(--linkcolor);
+	text-shadow: -5px 5px 0px #eb6f92, -10px 10px #f6c177, -15px 15px 0px #C3A5E6, -20px 20px 0px #31748f;
 }
