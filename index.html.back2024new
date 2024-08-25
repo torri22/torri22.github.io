@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+  <body>
+    <div class="everything">
+      <div id="time" class="time"></div>
+      <form action="https://gowogle.voring.me/search" method="GET">
+        <input
+          autofocus
+          name="q"
+          class="search"
+          type="search"
+          id="search-bar-input"
+          placeholder=""
+        />
+      </form>
+      <div class="box">
+        <div class="link">
+          <ul>
+            <li><a href="http://gmail.com" id="gmail">gmail</a></li>
+		<li><a href="https://web.whatsapp.com/" id="whatsapp">whatsapp</a></li>
+		<li><a href="https://www.instagram.com/">instagram</a></li>
+		<li><a href="https://cookidoo.es/organize/es-ES/my-recipes" id="cookidoo">cookidoo</a></li>
+		<li><a href="https://www.workflowy.com/" id="workflowy">workflowy</a></li>
+		<li><a href="https://drive.google.com/drive/u/0/my-drive" id="drive">google drive</a></li>
+		<li><a href="https://app.simplenote.com/" id="simplenote">simplenote</a></li>
+		<li><a href="https://keep.google.com/">google keep</a></li>
+		<li><a href="https://www.notion.so/torri22/WIKI-e6107be2ba7a46abb0209311074f521e">notion</a></li>
+		<li><a href="https://particulares.bancosantander.es/login/">santander</a></li>   
+          </ul>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="https://www.youtube.com" id="youtube">youtube</a></li>
+		<li><a href="https://open.spotify.com" id="spotify">spotify</a></li>
+		<li><a href="https://coderadio.freecodecamp.org/" id="coderadio">coderadio</a></li>
+		<li><a href="https://ytconverter.app/" id="converter">wav converter</a></li>
+               	<li><a href="https://www.clipconverter.cc/" id="converter">clip converter</a></li>
+		<li><a href="https://www.twitch.tv/" id="twitch">twitch</a></li>
+		<li><a href="http://deviantart.com" id="deviantart">deviantart</a></li>
+		<li><a href="https://digitalvanity.me/" id="digitalvanity">digital vanity</a></li>
+	        <li><a href="https://www.netflix.com/browse" id="netflix">netflix</a></li>
+		<li><a href="https://ver.movistarplus.es/" id="movistar">movistar</a></li>
+          </ul>
+        </div>
+<div class="link">
+          <ul>
+            <li><a href="https://www.elmundo.es/" id="mundo">el mundo</a></li>
+	        <li><a href="https://elpais.com/" id="pais">el pais</a></li>
+		<li><a href="http://www.as.com" id="as">as</a></li>
+		<li><a href="https://feedly.com" id="feedly">feedly</a></li>
+		<li><a href="https://www.reddit.com/me/m/all_personal/" id="reddit">reddit</a></li>
+		<li><a href="https://9gag.com/" id="9gag">9gag</a></li>
+		<li><a href="https://www.elotrolado.net/" id="elotrolado">elotrolado</a></li>
+          </ul>
+        </div>
+
+<div class="link">
+          <ul>
+            <li><a href="https://santanderbenefits.empleadosvip.com/login-input.action">benefits</a></li>
+	        <li><a href="http://amazon.es" id="amazon">amazon</a></li>
+		<li><a href="https://www.ubereats.com/es-en" id="uber">uber eats</a></li>
+		<li><a href="https://glovoapp.com/">glovo</a></li>
+		<li><a href="https://www.just-eat.es/">just eat</a></li>
+          </ul>
+        </div>
+<div class="link">
+          <ul>
+            <li><a href="https://showrss.info/" id="showRSS">showrss</a></li>
+		<li><a href="https://bt4gprx.com/" id="rarbg">Torrent Search</a></li>
+		<li><a href="https://crackwatch.com/" id="crackwatch">crackwatch</a></li>
+                <li><a href="https://unblockit.bio/">UnblockIt</a></li>
+		<li><a href="https://cs.rin.ru/forum/">CS.RIN.RU</a></li>
+		<li><a href="https://gamedrive.org/">Game Drive</a></li>
+		<li><a href="https://www.elamigos-games.com/">el amigos</a></li>
+		<li><a href="https://fitgirl-repacks.site/">fit girl</a></li>		    
+		<li><a href="https://wallhaven.cc/" id="wallhaven">wallhaven</a></li>      
+          </ul>
+        </div>
+<div class="link">
+          <ul>
+           <li><a href="https://www.thingiverse.com/" id="Thingiverse">Thingiverse</a></li>
+<li><a href="https://www.myminifactory.com/es/" id="My Mini Factory">My Mini Factory</a></li>
+<li><a href="https://cults3d.com/es" id="Cults 3D">Cults 3D</a></li>
+          </ul>
+        </div>
+
+        <!-- Feel free to add more divs here -->
+      </div>
+    </div>
+    <script>
+      function updateClock() {
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        //let ampm = hours >= 12 ? "pm" : "am";
+        //hours = hours % 12;
+        //hours = hours ? hours : 12;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        let time = hours + ":" + minutes;
+        document.getElementById("time").innerHTML = time;
+        setTimeout(updateClock, 1000);
+      }
+
+      updateClock();
+    </script>
+  </body>
+</html>
